@@ -1,14 +1,19 @@
-import "./App.css";
 import React from "react";
+import { ThemeProvider } from "styled-components";
+
+import GlobalStyles from "./styles/global";
+import Header from "./components/Header/Header";
+import Light from "./styles/Themes/Light";
+import Dark from "./styles/Themes/Dark";
 
 function App() {
   return (
-    <div className="App">
-      <h1>
-        Hello world!!!
-      </h1>
-      
-    </div>
+    <ThemeProvider theme={Light}>
+      <div className="App">
+        <GlobalStyles />
+        <Header />
+      </div>
+    </ThemeProvider>
   );
 }
 
