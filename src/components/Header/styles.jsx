@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-//${props => props.theme.colors.primary};
-
 export const Container = styled.div`
   height: 60px;
   background: ${(props) => props.theme.colors.primary};

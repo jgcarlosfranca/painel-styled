@@ -1,28 +1,26 @@
-import React, { useContext } from 'react';
-// import Switch from 'react-switch';
-import { ThemeContext } from 'styled-components';
+import React, { useContext, useState } from "react";
+import SwitchToogle from "../switchToogleTheme/SwitchToogleTheme";
+import { ThemeContext } from "styled-components";
 
+import { Container } from "./styles";
 
-import { Container } from './styles';
+const Header = ({ toggleTheme }) => {
+  const { colors, title } = useContext(ThemeContext);
 
-const Header =  () => {//{({ toggleTheme }) => {
-//   const { colors, title } = useContext(ThemeContext);
+  const handleToogleTheme = (e) => {
+    console.log(e, toggleTheme)
+    toggleTheme()
+  }
 
   return (
     <Container>
       Hello World
-
-      {/* <Switch
-        onChange={toggleTheme}
-        checked={title === 'dark'}
-        checkedIcon={false}
-        uncheckedIcon={false}
-        height={10}
-        width={40}
-        handleDiameter={20}
-        // offColor={shade(0.15, colors.primary)}
-        onColor={colors.secundary}
-      /> */}
+      <SwitchToogle
+        name="teste_Switch_toogle"
+        valor={title === 'light-theme'}
+        label="teste"
+        handleChangeCheckBox={handleToogleTheme}
+      />
     </Container>
   );
 };
