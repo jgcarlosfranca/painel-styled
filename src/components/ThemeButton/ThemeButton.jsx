@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
+import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { ThemeContext } from "styled-components";
 
 import { ThemeButtonStyled } from "./styles";
@@ -9,9 +9,9 @@ const ThemeButton = ({ toggleTheme }) => {
 
   const icon =
     title === "light-theme" ? (
-      <BsMoonFill size={25} />
+      <BsMoonStarsFill size={30} />
     ) : (
-      <BsFillSunFill size={25} />
+      <BsFillSunFill size={30} />
     );
 
   const handleToogleTheme = (e) => {

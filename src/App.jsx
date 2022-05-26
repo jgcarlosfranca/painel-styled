@@ -20,6 +20,7 @@ function App() {
       <div className="App">
         <GlobalStyles />
         <Header toggleTheme={toggleTheme} />
+        <h1> MY MY</h1>
       </div>
     </ThemeProvider>
   );
