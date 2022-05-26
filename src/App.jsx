@@ -19,7 +19,7 @@ function App() {
       <div className="App">
         <GlobalStyles />
         <Header toggleTheme={toggleTheme} />
-        <ThemeButton toggleTheme={toggleTheme} />
+        
       </div>
     </ThemeProvider>
   );

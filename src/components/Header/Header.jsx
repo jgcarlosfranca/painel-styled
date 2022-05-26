@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import SwitchToogle from "../switchToogleTheme/SwitchToogleTheme";
+import ThemeButton from "../ThemeButton/ThemeButton";
 import { ThemeContext } from "styled-components";
 
 import { Container } from "./styles";
@@ -14,12 +15,7 @@ const Header = ({ toggleTheme }) => {
   return (
     <Container>
       Hello World
-      <SwitchToogle
-        name="teste_Switch_toogle"
-        valor={title === 'light-theme'}
-        label="teste"
-        handleChangeCheckBox={handleToogleTheme}
-      />
+      <ThemeButton toggleTheme={toggleTheme} />
     </Container>
   );
 };
