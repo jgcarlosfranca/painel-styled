@@ -8,7 +8,6 @@ const Header = ({ toggleTheme }) => {
   const { colors, title } = useContext(ThemeContext);
 
   const handleToogleTheme = (e) => {
-    console.log(e, toggleTheme)
     toggleTheme()
   }
 

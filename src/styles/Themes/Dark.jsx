@@ -7,7 +7,8 @@ export default {
   
       background: '#151E3F',
       text: '#fff',
-      textLight: '#fff'
+      textLight: '#fff',
+      toggleThemeBackGrond: '#f2e417',
       
     },
   };
