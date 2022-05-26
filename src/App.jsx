@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/global";
 import Header from "./components/Header/Header";
 import ThemeButton from "./components/ThemeButton/ThemeButton";
-import usePersistedState from "./utils/usePersistentState";
+import usePersistedState from "./utils/Hooks/usePersistentState";
 import Light from "./styles/Themes/Light";
 import Dark from "./styles/Themes/Dark";
 
