@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 
+
 const ToggleSwitch = (props) => {
   return (
     <div className="container_switch_toogle">

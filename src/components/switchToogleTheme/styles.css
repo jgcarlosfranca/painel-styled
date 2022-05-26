@@ -1,7 +1,7 @@
 .container_switch_toogle {
     display: flex;
     align-items: center;
-    padding: 30px 20px 20px 20px;
+    padding: 20px;
 }
 
 .toggle-switch {
