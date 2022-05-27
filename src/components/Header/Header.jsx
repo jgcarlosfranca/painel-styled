@@ -3,7 +3,7 @@ import SwitchToogle from "../switchToogleTheme/SwitchToogleTheme";
 import ThemeButton from "../ThemeButton/ThemeButton";
 import { ThemeContext } from "styled-components";
 
-import { Container } from "./styles";
+import { HeaderContainer } from "./styles";
 
 const Header = ({ toggleTheme }) => {
   const { colors, title } = useContext(ThemeContext);
@@ -13,10 +13,10 @@ const Header = ({ toggleTheme }) => {
   }
 
   return (
-    <Container>
+    <HeaderContainer>
       Hello World
       <ThemeButton toggleTheme={toggleTheme} />
-    </Container>
+    </HeaderContainer>
   );
 };
 
