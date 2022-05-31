@@ -1,5 +1,5 @@
 const Home = () => {
-    return <div className="title"> Home</div>;
+    return <div> Home</div>;
   };
   
-  export default Analytics;
+  export default Home;
