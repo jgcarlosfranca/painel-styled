@@ -1,10 +1,8 @@
 .sidebar {
-    flex: 1;
     height: 100vh;
     position: relative;
     background-color: rgb(208, 207, 207);
-    max-width: 20%;
-    min-width: 15%;
+    width: 10%;
 }
 
 .sidebarWrapper {
