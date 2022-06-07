@@ -4,7 +4,7 @@ export const StyledBodyConteiner = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-width: 80%;
+width: 90%;
 align-content: stretch;
 
 `;
