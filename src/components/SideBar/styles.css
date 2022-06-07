@@ -3,6 +3,7 @@
     position: relative;
     background-color: rgb(208, 207, 207);
     width: 10%;
+    min-width: 170px;
 }
 
 .sidebarWrapper {
