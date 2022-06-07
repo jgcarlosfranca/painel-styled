@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import GlobalStyles from "./styles/global";
 import Header from "./components/Header/Header";
-import Sidebar from "./components/SideBar";
+import { SideBarTeste } from "./components/SideBarTest";
 import { BodyConteiner } from "./components/BodyConteiner";
 
 import ThemeButton from "./components/ThemeButton/ThemeButton";
@@ -26,7 +26,7 @@ function App() {
       <div className="App">
         <Router>
           <GlobalStyles />
-          <Sidebar />
+          <SideBarTeste />
           <BodyConteiner>
             <Header toggleTheme={toggleTheme} />
             <Routes>
