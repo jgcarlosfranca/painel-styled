@@ -11,21 +11,6 @@ import {
 import routes from "../../routes/routes";
 
 export const SideBarTeste = () => {
-  console.log(
-    "teste com map",
-    routes.map((route) => {
-      return route.path;
-      // routes.path;
-
-      // {
-      //   routes.icon;
-      // }
-      // {
-      //   routes.name;
-      // }
-    })
-  );
-
   return (
     <StyledSideBar>
       <StyledSideBarWrapper>
