@@ -33,7 +33,9 @@ export const StyledSideBarItem = styled.li`
   border-radius: 10px;
   margin: 10px;
   font-size: 20px !important;
+  color: ${(props) => props.theme.colors.text}; 
   &:hover {
     color: ${(props) => props.theme.colors.text}; 
+    padding: 15px 30px 20px 25px;
   }
 `;
