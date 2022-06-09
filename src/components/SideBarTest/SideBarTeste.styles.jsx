@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const StyledSideBar = styled.div`
   height: 100vh;
   position: relative;
-  background-color: rgb(208, 207, 207);
+  background-color: ${(props) => props.theme.colors.sidebarBackgroud};
   width: 15%;
   min-width: 255px;
 `;
 
-//${(props) => props.theme.colors.header};
+//${(props) => props.theme.colors.sidebarBackgroud};
 export const StyledSideBarWrapper = styled.div`
   padding: 20px;
-  color: #555;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 export const StyledSideBarMenu = styled.div`
@@ -35,6 +35,6 @@ export const StyledSideBarItem = styled.li`
   font-size: 20px !important;
   &:hover {
     background-color: rgb(93, 192, 93);
-    color: aliceblue;
+    color: ${(props) => props.theme.colors.text};
   }
 `;
