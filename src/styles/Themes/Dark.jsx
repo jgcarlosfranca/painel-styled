@@ -11,5 +11,6 @@ export default {
     text: "#fff",
     textLight: "#fff",
     toggleThemeBackGrond: "#ffb300",
+    sidebarBackgroud: '#030a25',
   },
 };
