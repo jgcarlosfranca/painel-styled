@@ -34,7 +34,6 @@ export const StyledSideBarItem = styled.li`
   margin: 10px;
   font-size: 20px !important;
   &:hover {
-    background-color: rgb(93, 192, 93);
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text}; 
   }
 `;
