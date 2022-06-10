@@ -33,9 +33,17 @@ export const StyledSideBarItem = styled.li`
   border-radius: 10px;
   margin: 10px;
   font-size: 20px !important;
-  color: ${(props) => props.theme.colors.text}; 
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
   &:hover {
-    color: ${(props) => props.theme.colors.text}; 
+    color: ${(props) => props.theme.colors.text};
     padding: 15px 30px 20px 25px;
   }
+`;
+
+export const StyledSideBarBodyList = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 `;
