@@ -6,6 +6,7 @@ import {
   StyledSideBarMenu,
   StyledSideBarList,
   StyledSideBarItem,
+  StyledSideBarBodyList,
 } from "./SideBarTeste.styles";
 
 import routes from "../../routes/routes";
@@ -21,7 +22,9 @@ export const SideBarTeste = () => {
               return (
                 <Link to={route.path}>
                   <StyledSideBarItem>
-                    {route.icon}
+                    <StyledSideBarBodyList>
+                      {route.icon}
+                    </StyledSideBarBodyList>
                     {route.name}
                   </StyledSideBarItem>
                 </Link>
