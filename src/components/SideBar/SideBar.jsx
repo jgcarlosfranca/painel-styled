@@ -11,7 +11,7 @@ import {
 
 import routes from "../../routes/routes";
 
-export const SideBarTeste = () => {
+export const SideBar = () => {
   return (
     <StyledSideBar>
       <StyledSideBarWrapper>
