@@ -4,10 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import GlobalStyles from "./styles/global";
 import Header from "./components/Header/Header";
-import { SideBarTeste } from "./components/SideBarTest";
+import { SideBar } from "./components/SideBar";
 import { BodyConteiner } from "./components/BodyConteiner";
 
-import ThemeButton from "./components/ThemeButton/ThemeButton";
 import usePersistedState from "./utils/Hooks/usePersistentState";
 import Light from "./styles/Themes/Light";
 import Dark from "./styles/Themes/Dark";
@@ -26,7 +25,7 @@ function App() {
       <div className="App">
         <Router>
           <GlobalStyles />
-          <SideBarTeste />
+          <SideBar />
           <BodyConteiner>
             <Header toggleTheme={toggleTheme} />
             <Routes>
