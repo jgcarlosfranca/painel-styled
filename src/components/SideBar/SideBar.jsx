@@ -30,6 +30,8 @@ export const SideBar = () => {
                 </Link>
               );
             })}
+
+            another test
           </StyledSideBarList>
         </StyledSideBarMenu>
       </StyledSideBarWrapper>
