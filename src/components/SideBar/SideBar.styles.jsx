@@ -46,3 +46,10 @@ export const StyledSideBarBodyList = styled.div`
   justify-content: space-between;
   padding: 10px;
 `;
+
+
+export const StyledSideBarLinkName = styled.div`
+display: flex;
+padding: 10px;
+text-decoration: none;
+`;
