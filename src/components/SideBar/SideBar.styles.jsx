@@ -8,7 +8,6 @@ export const StyledSideBar = styled.div`
   min-width: 255px;
 `;
 
-//${(props) => props.theme.colors.sidebarBackgroud};
 export const StyledSideBarWrapper = styled.div`
   padding: 20px;
   color: ${(props) => props.theme.colors.text};
