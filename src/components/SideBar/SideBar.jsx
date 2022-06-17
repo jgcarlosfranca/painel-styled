@@ -8,6 +8,7 @@ import {
   StyledSideBarItem,
   StyledSideBarBodyList,
   StyledSideBarLinkName,
+  StyledSideBarTextConteiner,
 } from "./SideBar.styles";
 
 import routes from "../../routes/routes";
@@ -29,7 +30,9 @@ export const SideBar = () => {
                 </Link>
               );
             })}
-            another test
+            <StyledSideBarTextConteiner>
+              another test
+            </StyledSideBarTextConteiner>
           </StyledSideBarList>
         </StyledSideBarMenu>
       </StyledSideBarWrapper>

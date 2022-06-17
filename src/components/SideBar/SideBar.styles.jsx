@@ -47,9 +47,18 @@ export const StyledSideBarBodyList = styled.div`
   padding: 10px;
 `;
 
-
 export const StyledSideBarLinkName = styled.div`
-display: flex;
-padding: 10px;
-text-decoration: none;
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+`;
+
+export const StyledSideBarTextConteiner = styled.div`
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  &:hover {
+    color: ${(props) => props.theme.colors.header};
+    transform: scale(1.1);
+  }
 `;
