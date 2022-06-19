@@ -13,6 +13,7 @@ export const StyledSideBarHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: default;
   svg {
     width: 30px;
     fill: ${(props) => props.theme.colors.text};
