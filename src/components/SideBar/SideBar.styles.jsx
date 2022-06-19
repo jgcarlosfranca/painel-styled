@@ -12,6 +12,12 @@ export const StyledSideBarHeader = styled.div`
   height: 20%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  svg {
+    width: 30px;
+    fill: ${(props) => props.theme.colors.text};
+    cursor: pointer;
+  }
 `;
 
 export const StyledSideBarWrapper = styled.div`

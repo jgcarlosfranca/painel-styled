@@ -11,6 +11,7 @@ import {
   StyledSideBarTextConteiner,
   StyledSideBarHeader,
 } from "./SideBar.styles";
+import { TiLockOpen } from "react-icons/ti";
 
 import routes from "../../routes/routes";
 
@@ -20,7 +21,9 @@ export const SideBar = () => {
       <StyledSideBarWrapper>
         <StyledSideBarMenu>
           <StyledSideBarList>
-            <StyledSideBarHeader>Teste</StyledSideBarHeader>
+            <StyledSideBarHeader>
+              Teste <TiLockOpen />
+            </StyledSideBarHeader>
             {routes.map((route) => {
               return (
                 <Link to={route.path}>
