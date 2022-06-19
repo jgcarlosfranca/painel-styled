@@ -8,6 +8,12 @@ export const StyledSideBar = styled.div`
   min-width: 255px;
 `;
 
+export const StyledSideBarHeader = styled.div`
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+`;
+
 export const StyledSideBarWrapper = styled.div`
   padding: 20px;
   color: ${(props) => props.theme.colors.text};

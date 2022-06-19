@@ -9,6 +9,7 @@ import {
   StyledSideBarBodyList,
   StyledSideBarLinkName,
   StyledSideBarTextConteiner,
+  StyledSideBarHeader,
 } from "./SideBar.styles";
 
 import routes from "../../routes/routes";
@@ -19,7 +20,7 @@ export const SideBar = () => {
       <StyledSideBarWrapper>
         <StyledSideBarMenu>
           <StyledSideBarList>
-            Teste
+            <StyledSideBarHeader>Teste</StyledSideBarHeader>
             {routes.map((route) => {
               return (
                 <Link to={route.path}>
