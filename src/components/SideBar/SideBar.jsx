@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   StyledSideBar,
@@ -16,8 +16,18 @@ import { TiLockClosed } from "react-icons/ti";
 import routes from "../../routes/routes";
 
 export const SideBar = () => {
+  const [sideBarWidth, setSideBarWidth] = useState("15%");
+  const [sideBarCollapse, setSideBarCollapse] = useState(false);
+
   const toogleSidebar = () => {
     console.log("clicou na lock sidebar!");
+    if (sideBarCollapse) {
+      setSideBarWidth("5%");
+      setSideBarCollapse(false);
+    } else {
+      setSideBarWidth("15%");
+      setSideBarCollapse(true);
+    }
   };
 
   return (
