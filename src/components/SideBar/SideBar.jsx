@@ -16,13 +16,17 @@ import { TiLockOpen } from "react-icons/ti";
 import routes from "../../routes/routes";
 
 export const SideBar = () => {
+  const toogleSidebar = () => {
+    console.log("clicou na lock sidebar!");
+  };
+
   return (
     <StyledSideBar>
       <StyledSideBarWrapper>
         <StyledSideBarMenu>
           <StyledSideBarList>
             <StyledSideBarHeader>
-              Teste <TiLockOpen />
+              Teste <TiLockOpen onClick={toogleSidebar} />
             </StyledSideBarHeader>
             {routes.map((route) => {
               return (
