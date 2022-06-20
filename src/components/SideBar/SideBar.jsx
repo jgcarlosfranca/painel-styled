@@ -11,7 +11,7 @@ import {
   StyledSideBarTextConteiner,
   StyledSideBarHeader,
 } from "./SideBar.styles";
-import { TiLockClosed } from "react-icons/ti";
+import { LockButton } from "../LockButton";
 
 import routes from "../../routes/routes";
 
@@ -36,7 +36,7 @@ export const SideBar = () => {
         <StyledSideBarMenu>
           <StyledSideBarList>
             <StyledSideBarHeader>
-              Teste <TiLockClosed onClick={toogleSidebar} />
+              Teste <LockButton />
             </StyledSideBarHeader>
             {routes.map((route) => {
               return (
