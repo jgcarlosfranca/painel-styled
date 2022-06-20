@@ -6,6 +6,9 @@ export const StyledSideBar = styled.div`
   background-color: ${(props) => props.theme.colors.sidebarBackgroud};
   width: 15%;
   min-width: 255px;
+  a{
+    text-decoration: none;
+  }
 `;
 
 export const StyledSideBarHeader = styled.div`
