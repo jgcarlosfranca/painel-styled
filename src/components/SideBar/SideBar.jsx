@@ -36,7 +36,7 @@ export const SideBar = () => {
         <StyledSideBarMenu>
           <StyledSideBarList>
             <StyledSideBarHeader>
-              Teste <LockButton />
+              Teste <LockButton toogleSidebar={toogleSidebar} />
             </StyledSideBarHeader>
             {routes.map((route) => {
               return (
