@@ -9,20 +9,21 @@ const routes = [
     icon: <FaHome />,
   },
   {
-    path: "/users",
-    name: "Users",
+    path: "/Calendar",
+    name: "Calendar",
     icon: <FaUser />,
   },
   {
-    path: "/messages",
-    name: "Messages",
+    path: "/Reports",
+    name: "Reports",
     icon: <MdMessage />,
   },
   {
-    path: "/analytics",
-    name: "Analytics",
+    path: "/Tools",
+    name: "Tools",
     icon: <BiAnalyse />,
   },
+  
 ];
 
 export default routes;
