@@ -12,6 +12,9 @@ import Light from "./styles/Themes/Light";
 import Dark from "./styles/Themes/Dark";
 
 import Home from "./pages/Home";
+import Calendar from "./pages/Calendar";
+import Reports from "./pages/Reports";
+import Tools from "./pages/Tools";
 
 function App() {
   const [theme, setTheme] = usePersistedState("theme", Dark);
@@ -30,6 +33,9 @@ function App() {
             <Header toggleTheme={toggleTheme} />
             <Routes>
               <Route element={<Home />} exact path="/" />
+              <Route element={<Calendar />} exact path="/Calendar" />
+              <Route element={<Reports />} exact path="/Reports" />
+              <Route element={<Tools />} exact path="/Tools" />
             </Routes>
           </BodyConteiner>
         </Router>
