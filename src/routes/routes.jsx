@@ -1,6 +1,5 @@
-import { FaHome, FaUser } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
-import { BiAnalyse } from "react-icons/bi";
+import { FaHome, FaCalendarAlt, FaTools } from "react-icons/fa";
+import { GoRepoPush } from "react-icons/go";
 
 const routes = [
   {
@@ -11,19 +10,18 @@ const routes = [
   {
     path: "/Calendar",
     name: "Calendar",
-    icon: <FaUser />,
+    icon: <FaCalendarAlt />,
   },
   {
     path: "/Reports",
     name: "Reports",
-    icon: <MdMessage />,
+    icon: <GoRepoPush />,
   },
   {
     path: "/Tools",
     name: "Tools",
-    icon: <BiAnalyse />,
+    icon: <FaTools />,
   },
-  
 ];
 
 export default routes;
