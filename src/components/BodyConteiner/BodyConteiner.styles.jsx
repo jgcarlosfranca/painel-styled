@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const StyledBodyConteiner = styled.div`
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: 85%;
-max-width: calc(100% - 255px);
-align-content: stretch;
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 `;
