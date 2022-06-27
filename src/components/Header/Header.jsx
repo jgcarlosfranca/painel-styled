@@ -14,7 +14,7 @@ const Header = ({ toggleTheme }) => {
 
   return (
     <HeaderContainer>
-      Hello World
+      
       <ThemeButton toggleTheme={toggleTheme} />
     </HeaderContainer>
   );
