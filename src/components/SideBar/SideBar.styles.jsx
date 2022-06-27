@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const StyledSideBar = styled.div`
   height: 100vh;
-  position: relative;
+  position: sticky;
+  top: 0%;
+  left: 0%;
   background-color: ${(props) => props.theme.colors.sidebarBackgroud};
   width: 15%;
   min-width: 255px;
