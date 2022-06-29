@@ -8,6 +8,7 @@ export default {
       borderHeader: '1px solid #a4a4a49b',
   
       background: '#F2F2F2', 
+      hoverLockButton: "#a4a4a4d4",
       text: '#333',
       textLight: '#f5f5f5',
       toggleThemeBackGrond: '#f5f5f5',
