@@ -19,5 +19,8 @@ export const HeaderContainer = styled.div`
   button {
     width: 45px;
     height: 45px;
+    &:hover {
+      background-color: ${(props) => props.theme.colors.hoverLockButton};
+    }
   }
 `;
