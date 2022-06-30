@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   height: 7vh;
+  min-height: 50px;
   width: 90%;
   position: sticky;
   top: 1vh;
