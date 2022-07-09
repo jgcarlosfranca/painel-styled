@@ -11,7 +11,7 @@ import usePersistedState from "./utils/Hooks/usePersistentState";
 import Light from "./styles/Themes/Light";
 import Dark from "./styles/Themes/Dark";
 
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Calendar from "./pages/Calendar";
 import Reports from "./pages/Reports";
 import Tools from "./pages/Tools";
