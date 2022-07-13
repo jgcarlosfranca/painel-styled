@@ -22,6 +22,7 @@ export const HeaderContainer = styled.div`
     height: 45px;
     &:hover {
       background-color: ${(props) => props.theme.colors.hoverLockButton};
+      transition: 0.3s;
     }
   }
 `;
