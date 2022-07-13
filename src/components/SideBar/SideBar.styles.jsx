@@ -64,6 +64,7 @@ export const StyledSideBarItem = styled.li`
   &:hover {
     color: ${(props) => props.theme.colors.text};
     padding: 15px 30px 20px 25px;
+    transition: ease 0.3s;
   }
 `;
 
@@ -87,5 +88,6 @@ export const StyledSideBarTextConteiner = styled.div`
   &:hover {
     color: ${(props) => props.theme.colors.header};
     transform: scale(1.1);
+    transition: 0.3s;
   }
 `;
