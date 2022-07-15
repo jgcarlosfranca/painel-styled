@@ -11,7 +11,7 @@ import {
   StyledSideBarTextConteiner,
   StyledSideBarHeader,
 } from "./SideBar.styles";
-import { LockButton } from "../LockButton";
+import { LockButton } from "../../LockButton";
 
 import routes from "../../routes/routes";
 
