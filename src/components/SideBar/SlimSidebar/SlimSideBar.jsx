@@ -9,31 +9,23 @@ import {
   StyledSlimSideBarBodyList,
   StyledSlimSideBarTextConteiner,
   StyledSlimSideBarHeader,
+  StyledSlimSideBarLockIconWrapper,
 } from "./SlimSideBar.styles";
 import { LockButton } from "../../LockButton";
 
 import routes from "../../../routes/routes";
 
 export const SlimSideBar = () => {
-  const [sideBarCollapse, setSideBarCollapse] = useState(false);
-
-  const toogleSidebar = () => {
-    if (sideBarCollapse) {
-      setSideBarWidth("5%");
-      setSideBarCollapse(false);
-    } else {
-      setSideBarWidth("15%");
-      setSideBarCollapse(true);
-    }
-  };
-
   return (
     <StyledSlimSideBar>
       <StyledSlimSideBarWrapper>
         <StyledSlimSideBarMenu>
           <StyledSlimSideBarList>
             <StyledSlimSideBarHeader>
-              Teste <LockButton toogleSidebar={toogleSidebar} />
+              T
+              <StyledSlimSideBarLockIconWrapper>
+                <LockButton />
+              </StyledSlimSideBarLockIconWrapper>
             </StyledSlimSideBarHeader>
             {routes.map((route) => {
               return (
