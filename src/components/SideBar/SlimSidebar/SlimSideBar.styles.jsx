@@ -6,8 +6,8 @@ export const StyledSlimSideBar = styled.div`
   top: 0%;
   left: 0%;
   background-color: ${(props) => props.theme.colors.sidebarBackgroud};
-  width: 15%;
-  min-width: 255px;
+  width: 5%;
+  min-width: 100px;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 5px;
@@ -19,7 +19,7 @@ export const StyledSlimSideBar = styled.div`
 
   ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: ${(props) => props.theme.colors.sideBarThumb}; 
+    background-color: ${(props) => props.theme.colors.sideBarThumb};
     border-radius: 100px;
   }
   a {
@@ -30,10 +30,18 @@ export const StyledSlimSideBar = styled.div`
 export const StyledSlimSideBarHeader = styled.div`
   height: 20%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   cursor: default;
 `;
+
+export const StyledSlimSideBarLockIconWrapper = styled.div`
+ display: flex;
+ justify-content: flex-end;
+ font-size: 5px;
+ padding: 5px 0px 5px 50px;
+`
 
 export const StyledSlimSideBarWrapper = styled.div`
   padding: 20px;
@@ -51,19 +59,19 @@ export const StyledSlimSideBarList = styled.ul`
 `;
 
 export const StyledSlimSideBarItem = styled.li`
-  padding: 15px 20px 20px 15px;
+  padding: 15px 7px 7px 1px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
   margin: 10px;
-  font-size: 20px !important;
+  font-size: 27px !important;
   color: ${(props) => props.theme.colors.text};
   text-decoration: none;
   &:hover {
     color: ${(props) => props.theme.colors.text};
-    padding: 15px 30px 20px 25px;
+    padding: 15px 15px 7px 5px;
     transition: ease 0.3s;
   }
 `;
@@ -83,8 +91,8 @@ export const StyledSlimSideBarLinkName = styled.div`
 
 export const StyledSlimSideBarTextConteiner = styled.div`
   display: flex;
-  padding: 10px;
-  font-size: 20px;
+
+  font-size: 15px;
   &:hover {
     color: ${(props) => props.theme.colors.header};
     transform: scale(1.1);
