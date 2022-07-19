@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GlobalStyles from "./styles/global";
 import Header from "./components/Header/Header";
 import { SideBar } from "./components/SideBar/LargeSideBar";
+import { SlimSideBar } from "./components/SideBar/SlimSidebar";
 import { BodyConteiner } from "./components/BodyConteiner";
 
 import usePersistedState from "./utils/Hooks/usePersistentState";
