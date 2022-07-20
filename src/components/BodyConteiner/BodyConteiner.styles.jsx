@@ -7,4 +7,5 @@ export const StyledBodyConteiner = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  transition: linear 0.5s;
 `;
