@@ -9,6 +9,7 @@ export const StyledSlimSideBar = styled.div`
   width: 5%;
   min-width: 100px;
   overflow-y: scroll;
+  transition: linear 0.5s;
   ::-webkit-scrollbar {
     width: 5px;
   }
