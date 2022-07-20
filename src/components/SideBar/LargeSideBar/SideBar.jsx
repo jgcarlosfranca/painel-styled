@@ -15,7 +15,7 @@ import { LockButton } from "../../LockButton";
 
 import routes from "../../../routes/routes";
 
-export const SideBar = () => {
+export const LargeSideBar = () => {
   const [sideBarWidth, setSideBarWidth] = useState("15%");
   const [sideBarCollapse, setSideBarCollapse] = useState(false);
 
