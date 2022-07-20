@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { LargeSideBar } from "./LargeSideBar";
 import { SlimSideBar } from "./SlimSidebar";
 import { useSelector } from "react-redux/es/exports";
