@@ -7,7 +7,7 @@ export const StyledSlimSideBar = styled.div`
   left: 0%;
   background-color: ${(props) => props.theme.colors.sidebarBackgroud};
   width: 5%;
-  min-width: 100px;
+  min-width: 125px;
   overflow-y: scroll;
   transition: linear 0.5s;
   ::-webkit-scrollbar {
