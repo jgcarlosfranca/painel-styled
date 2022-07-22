@@ -14,7 +14,7 @@ import Dark from "./styles/Themes/Dark";
 import Home from "./pages/Home/Home";
 import Calendar from "./pages/Calendar";
 import Reports from "./pages/Reports";
-import Tools from "./pages/Tools";
+import Tools from "./pages/Tools/Tools";
 
 function App() {
   const [theme, setTheme] = usePersistedState("theme", Dark);
