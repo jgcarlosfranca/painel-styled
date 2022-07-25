@@ -65,3 +65,13 @@ export const StyledTabUl = styled.ul`
       ${(props) => props.theme.colors.primaryButtonColor};
   }
 `;
+
+export const StyledTabBody = styled.div`
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background 0s,
+    border 0s;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  color: ${(props) => props.theme.colors.primaryButtonColor};
+`;
