@@ -1,44 +1,52 @@
 import React, { useState } from "react";
+import { StyledTab, StyledTabUl, StyledTabBody } from "./Tab.styles";
 
-import { StyledTab, StyledTabUl } from "./Tab.styles";
-
-const Tabs = () => {
+const Tabs = (props) => {
   const [activeTab, setActiveTab] = useState("tab1");
   const handleTab = (tab) => {
     setActiveTab(tab);
+  };
+
+  const tabBody = () => {
+    console.log("entrou aq", activeTab);
+    let component = <div></div>;
+    switch (activeTab) {
+      case "tab1":
+        component = <div> body da Tab1</div>;
+        break;
+      case "tab2":
+        component = <div> body da Tab2</div>;
+        break;
+      case "tab3":
+        component = <div> body da Tab3</div>;
+        break;
+      case "tab4":
+        component = <div> body da Tab4</div>;
+        break;
+
+      default:
+        component = <div> body da Tab1</div>;
+        break;
+    }
+    return component;
   };
 
   return (
     <StyledTab>
       {/* Tab nav */}
       <StyledTabUl>
-        <li
-          className={activeTab === "tab1" ? "active" : ""}
-          onClick={() => handleTab("tab1")}
-        >
-          Tab 1
-        </li>
-
-        <li
-          className={activeTab === "tab2" ? "active" : ""}
-          onClick={() => handleTab("tab2")}
-        >
-          Tab 2
-        </li>
-        <li
-          className={activeTab === "tab3" ? "active" : ""}
-          onClick={() => handleTab("tab3")}
-        >
-          Tab 3
-        </li>
-        <li
-          className={activeTab === "tab4" ? "active" : ""}
-          onClick={() => handleTab("tab4")}
-        >
-          Tab 4
-        </li>
+        {props.tabs.map((tab) => {
+          return (
+            <li
+              className={activeTab === tab.titulo ? "active" : ""}
+              onClick={() => handleTab(tab.titulo)}
+            >
+              {tab.titulo}
+            </li>
+          );
+        })}
       </StyledTabUl>
-      <div className="outlet">{/* content will be shown here */}</div>
+      <StyledTabBody>{tabBody()}</StyledTabBody>
     </StyledTab>
   );
 };
