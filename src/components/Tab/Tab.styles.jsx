@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const StyledTab = styled.div`
-  width: 80%;
+  width: 100%;
   height: auto;
   min-height: 400px;
-  background: #053742;
-  margin: 3.5rem auto 1.5rem;
+  background: ${(props) => props.theme.colors.sidebarBackgroud};
+  margin: 1.5rem auto 0.5rem;
   padding: 2rem 1rem;
   color: #e8f0f2;
-  border-radius: 2rem;
+  border-radius: 1rem;
 
   @media (max-width: 769px) {
     padding: 2rem 0;
@@ -17,12 +17,10 @@ export const StyledTab = styled.div`
 
 export const StyledTabUl = styled.ul`
   width: 60%;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #39a2db;
-  border-radius: 2rem;
 
   @media (max-width: 768px) {
     width: 90%;
@@ -35,21 +33,35 @@ export const StyledTabUl = styled.ul`
     text-align: center;
     cursor: pointer;
     transition: all 0.7s;
-    border-bottom-left-radius: 2rem;
-    border-top-left-radius: 2rem;
   }
 
-  li:nth-child(2) {
-    border-radius: 0;
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem;
+  li:nth-child(n) {
+    background-color: ${(props) => props.theme.colors.primaryButtonColor};
+    margin: 5px;
+    border-radius: 5px;
   }
 
   li:hover {
-    background: rgba(50, 224, 196, 0.15);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+      background 0s, border 0s;
+    box-shadow: 0px 0px 10px 3px
+      ${(props) => props.theme.colors.primaryButtonColor};
+    -webkit-box-shadow: 0px 0px 10px 3px
+      ${(props) => props.theme.colors.primaryButtonColor};
+    -moz-box-shadow: 0px 0px 10px 3px
+      ${(props) => props.theme.colors.primaryButtonColor};
   }
 
   li.active {
-    background: #39a2db;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+      background 0s, border 0s;
+    box-shadow: 0px 0px 10px 3px
+      ${(props) => props.theme.colors.primaryButtonColor};
+    -webkit-box-shadow: 0px 0px 10px 3px
+      ${(props) => props.theme.colors.primaryButtonColor};
+    -moz-box-shadow: 0px 0px 10px 3px
+      ${(props) => props.theme.colors.primaryButtonColor};
   }
 `;
