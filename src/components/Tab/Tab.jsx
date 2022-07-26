@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { StyledTab, StyledTabUl, StyledTabBody } from "./Tab.styles";
 
 const Tabs = (props) => {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const deafultActiveTab = props.tabs[0].titulo
+  const [activeTab, setActiveTab] = useState(deafultActiveTab);
+  
   const handleTab = (tab) => {
     setActiveTab(tab);
   };
 
   const tabBody = () => {
-    console.log("entrou aq", activeTab);
     let component = <div></div>;
     switch (activeTab) {
       case "tab1":
