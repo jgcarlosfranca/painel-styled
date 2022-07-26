@@ -5,8 +5,8 @@ export const StyledTab = styled.div`
   height: auto;
   min-height: 400px;
   background: ${(props) => props.theme.colors.sidebarBackgroud};
-  margin: 1.5rem auto 0.5rem;
-  padding: 2rem 1rem;
+  margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 1.2rem 1rem;
   color: #e8f0f2;
   border-radius: 1rem;
 
@@ -28,7 +28,7 @@ export const StyledTabUl = styled.ul`
 
   li {
     width: 50%;
-    padding: 1rem;
+    padding: 0.9rem;
     list-style: none;
     text-align: center;
     cursor: pointer;
@@ -36,12 +36,14 @@ export const StyledTabUl = styled.ul`
   }
 
   li:nth-child(n) {
-    background-color: ${(props) => props.theme.colors.primaryButtonColor};
     margin: 5px;
     border-radius: 5px;
+    font-size: 20px;
+    font-family: Bahnschrift SemiBold;
   }
 
   li:hover {
+    background-color: ${(props) => props.theme.colors.primaryButtonColor};
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       background 0s, border 0s;
@@ -57,12 +59,7 @@ export const StyledTabUl = styled.ul`
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       background 0s, border 0s;
-    box-shadow: 0px 0px 10px 3px
-      ${(props) => props.theme.colors.primaryButtonColor};
-    -webkit-box-shadow: 0px 0px 10px 3px
-      ${(props) => props.theme.colors.primaryButtonColor};
-    -moz-box-shadow: 0px 0px 10px 3px
-      ${(props) => props.theme.colors.primaryButtonColor};
+    background-color: ${(props) => props.theme.colors.primaryButtonColor};
   }
 `;
 
