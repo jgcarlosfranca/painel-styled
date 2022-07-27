@@ -7,4 +7,9 @@ const numTabs = [
 ];
 
 
-export default numTabs;
+export const accordionData = {
+    question: "Lorem ipsum dolor sit amet?",
+    answer: "Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium. Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.",
+};
+
+export default { numTabs, accordionData };
