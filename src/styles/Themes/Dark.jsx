@@ -15,5 +15,6 @@ export default {
     sidebarBackgroud: "#283046",
     sideBarThumb: "#a4a4a46a",
     primaryButtonColor: "#7367f0",
+    glassBackGround: "#28304626"
   },
 };
