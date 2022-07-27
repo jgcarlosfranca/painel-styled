@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import GlobalStyles from "./styles/global";
 import Header from "./components/Header/Header";
+import { GlassEffectConteiner } from "./components/GlassEffectConteiner";
 import { SideBar } from "./components/SideBar/SideBar";
 import { BodyConteiner } from "./components/BodyConteiner";
 
@@ -31,6 +32,7 @@ function App() {
           <SideBar />
           <BodyConteiner>
             <Header toggleTheme={toggleTheme} />
+            <GlassEffectConteiner />
             <Routes>
               <Route element={<Home />} exact path="/" />
               <Route element={<Calendar />} exact path="/Calendar" />
