@@ -14,6 +14,7 @@ export default {
       toggleThemeBackGrond: '#f5f5f5',
       sidebarBackgroud: '#FFF',
       sideBarThumb: '#a4a4a496',
-      primaryButtonColor: "#7367f0"
+      primaryButtonColor: "#7367f0",
+      glassBackGround: '#ffffff17',
     },
   };
