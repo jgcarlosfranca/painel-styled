@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSlimSideBar = styled.div`
+  z-index: 10;
   height: 100vh;
   position: sticky;
   top: 0%;
@@ -38,11 +39,11 @@ export const StyledSlimSideBarHeader = styled.div`
 `;
 
 export const StyledSlimSideBarLockIconWrapper = styled.div`
- display: flex;
- justify-content: flex-end;
- font-size: 5px;
- padding: 5px 0px 5px 50px;
-`
+  display: flex;
+  justify-content: flex-end;
+  font-size: 5px;
+  padding: 5px 0px 5px 50px;
+`;
 
 export const StyledSlimSideBarWrapper = styled.div`
   padding: 20px;
