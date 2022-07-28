@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BiUpArrow } from "react-icons/bi";
+import { IoIosArrowUp } from "react-icons/io";
 import {
   StyledAccordion,
   StyledAccordionTitle,
@@ -9,14 +9,13 @@ import {
 
 export const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);
-  console.log(props.title, props.content);
 
   return (
     <StyledAccordion>
       <StyledAccordionTitle onClick={() => setIsActive(!isActive)}>
         <div>{props.title}</div>
         <StyledAccordionIcon active={isActive}>
-          <BiUpArrow />
+          <IoIosArrowUp />
         </StyledAccordionIcon>
       </StyledAccordionTitle>
       <StyledAccordionContent active={isActive}>
