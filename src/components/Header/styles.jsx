@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  z-index: 10;
   height: 7vh;
   min-height: 50px;
   width: 90%;
