@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledSideBar = styled.div`
   height: 100vh;
+  z-index: 10;
   position: sticky;
   top: 0%;
   left: 0%;
@@ -20,7 +21,7 @@ export const StyledSideBar = styled.div`
 
   ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: ${(props) => props.theme.colors.sideBarThumb}; 
+    background-color: ${(props) => props.theme.colors.sideBarThumb};
     border-radius: 100px;
   }
   a {
@@ -43,7 +44,6 @@ export const StyledSideBarTitleConteiner = styled.div`
   justify-content: space-between;
   cursor: default;
 `;
-
 
 export const StyledSideBarWrapper = styled.div`
   padding: 20px;
