@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 
 export const StyledAccordion = styled.div`
   width: 80%;
@@ -19,9 +19,6 @@ export const StyledAccordionTitle = styled.div`
   flex-direction: row;
   cursor: pointer;
   padding: 1rem;
-  &hover {
-    background-color: #3ab4cc;
-  }
 `;
 
 export const StyledAccordionIcon = styled.div`
@@ -34,7 +31,4 @@ export const StyledAccordionContent = styled.div`
   padding: 1rem;
   transition: opacity 1s ease-out;
   display: ${(props) => (props.active ? "auto" : "none")};
-  &hover {
-    background-color: #39b9d2;
-  }
 `;
