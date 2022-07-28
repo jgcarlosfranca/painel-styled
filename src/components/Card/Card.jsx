@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledCard } from "./Card.styles";
 
-export function Cards(props) {
+export function Card(props) {
 
   return (
     <StyledCard>
