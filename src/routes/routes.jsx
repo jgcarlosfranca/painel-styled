@@ -1,4 +1,4 @@
-import { FaHome, FaCalendarAlt, FaTools } from "react-icons/fa";
+import { FaHome, FaCalendarAlt, FaTools, FaModx } from "react-icons/fa";
 import { GoRepoPush } from "react-icons/go";
 
 const routes = [
@@ -21,6 +21,11 @@ const routes = [
     path: "/Tools",
     name: "Tools",
     icon: <FaTools />,
+  },
+  {
+    path: "/Modal",
+    name: "Modal",
+    icon: <FaModx />,
   },
 ];
 
