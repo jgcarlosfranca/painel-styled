@@ -16,6 +16,7 @@ import Home from "./pages/Home/Home";
 import Calendar from "./pages/Calendar";
 import Reports from "./pages/Reports";
 import Tools from "./pages/Tools/Tools";
+import ModalPage from "./pages/Modal/ModalPage";
 
 function App() {
   const [theme, setTheme] = usePersistedState("theme", Dark);
@@ -38,6 +39,7 @@ function App() {
               <Route element={<Calendar />} exact path="/Calendar" />
               <Route element={<Reports />} exact path="/Reports" />
               <Route element={<Tools />} exact path="/Tools" />
+              <Route element={<ModalPage />} exact path="/Modal" />
             </Routes>
           </BodyConteiner>
         </Router>
