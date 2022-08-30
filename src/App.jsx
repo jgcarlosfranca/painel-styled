@@ -13,8 +13,8 @@ import Light from "./styles/Themes/Light";
 import Dark from "./styles/Themes/Dark";
 
 import Home from "./pages/Home/Home";
-import Calendar from "./pages/Calendar";
-import Reports from "./pages/Reports";
+import Calendar from "./pages/Calendar/Calendar";
+import Reports from "./pages/Reports/Reports";
 import Tools from "./pages/Tools/Tools";
 import ModalPage from "./pages/Modal/ModalPage";
 
