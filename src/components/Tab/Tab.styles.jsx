@@ -9,8 +9,14 @@ export const StyledTab = styled.div`
   padding: 1.2rem 1rem;
   color: ${(props) => props.theme.colors.text};
   border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 
-  @media (max-width: 769px) {
+  @media (max-width: 1600px) {
     padding: 2rem 0;
   }
 `;
@@ -21,6 +27,7 @@ export const StyledTabUl = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: ${(props) => props.theme.colors.text};
 
   @media (max-width: 768px) {
     width: 90%;
@@ -33,6 +40,7 @@ export const StyledTabUl = styled.ul`
     text-align: center;
     cursor: pointer;
     transition: all 0.7s;
+    color: ${(props) => props.theme.colors.text};
   }
 
   li:nth-child(n) {
@@ -40,6 +48,7 @@ export const StyledTabUl = styled.ul`
     border-radius: 5px;
     font-size: 20px;
     font-family: Bahnschrift SemiBold;
+    color: ${(props) => props.theme.colors.text};
   }
 
   li:hover {
@@ -53,6 +62,7 @@ export const StyledTabUl = styled.ul`
       ${(props) => props.theme.colors.primaryButtonColor};
     -moz-box-shadow: 0px 0px 10px 3px
       ${(props) => props.theme.colors.primaryButtonColor};
+    color: ${(props) => props.theme.colors.textLight};
   }
 
   li.active {
@@ -60,6 +70,7 @@ export const StyledTabUl = styled.ul`
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       background 0s, border 0s;
     background-color: ${(props) => props.theme.colors.primaryButtonColor};
+    color: ${(props) => props.theme.colors.textLight};
   }
 `;
 
@@ -70,5 +81,5 @@ export const StyledTabBody = styled.div`
   width: 100%;
   height: auto;
   min-height: 400px;
-  color: ${(props) => props.theme.colors.primaryButtonColor};
+  color: ${(props) => props.theme.colors.text};
 `;
