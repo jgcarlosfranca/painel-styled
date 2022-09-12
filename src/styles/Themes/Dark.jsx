@@ -10,7 +10,7 @@ export default {
     background: "#111829",
     hoverLockButton: "#7e7e7ed3",
     text: "#fff",
-    textLight: "#fff",
+    textLight: "#f5f5f5",
     toggleThemeBackGrond: "#ffb300",
     sidebarBackgroud: "#283046",
     sideBarThumb: "#a4a4a46a",
