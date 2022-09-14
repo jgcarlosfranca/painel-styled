@@ -12,4 +12,87 @@ export const accordionData = {
     answer: "Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium. Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.",
 };
 
-export default { numTabs, accordionData };
+export const consultaTabela = {
+    titles: [
+        "ID",
+        "Persona",
+        "Games",
+        "Fases",
+        "Ativo",
+        "Data de Atualização",
+        "Data de Criação",
+        "Reponsável Atualização",
+        "Atualizar Linha",
+    ],
+    lines: [{
+            idLine: 1,
+            idPersona: 1,
+            nmPersona: "grupo 1",
+            idGames: 1,
+            nmGames: "Pagina 1",
+            idFases: 1,
+            nmFases: "Fase 1",
+            fgAtivo: "S",
+            dtAtualizacao: "01/01/2022",
+            dtCriacao: "01/01/2022",
+            user: "user criacao",
+        },
+        {
+            idLine: 2,
+            idGrupo: 1,
+            nmGrupo: "grupo 1",
+            idPage: 2,
+            nmPage: "Pagina 2",
+            idTool: 1,
+            nmTool: "Fase 2",
+            fgAtivo: "S",
+            dtAtualizacao: "01/01/2022",
+            dtCriacao: "01/01/2022",
+            user: "user criacao",
+        },
+        {
+            idLine: 3,
+            idGrupo: 1,
+            nmGrupo: "grupo 1",
+            idPage: 3,
+            nmPage: "Pagina 2",
+            idTool: 1,
+            nmTool: "Fase 3",
+            fgAtivo: "S",
+            dtAtualizacao: "01/01/2022",
+            dtCriacao: "01/01/2022",
+            user: "user criacao",
+        },
+        {
+            idLine: 4,
+            idGrupo: 1,
+            nmGrupo: "grupo 1",
+            idPage: 4,
+            nmPage: "Pagina 2",
+            idTool: 1,
+            nmTool: "Fase 4",
+            fgAtivo: "S",
+            dtAtualizacao: "01/01/2022",
+            dtCriacao: "01/01/2022",
+            user: "user criacao",
+        },
+        {
+            idLine: 5,
+            idGrupo: 1,
+            nmGrupo: "grupo 1",
+            idPage: 5,
+            nmPage: "Pagina 2",
+            idTool: 1,
+            nmTool: "Fase 5",
+            fgAtivo: "S",
+            dtAtualizacao: "01/01/2022",
+            dtCriacao: "01/01/2022",
+            user: "user criacao",
+        },
+    ],
+};
+
+
+
+
+export default { numTabs, accordionData, consultaTabela };
