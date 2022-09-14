@@ -1,31 +1,49 @@
-import { FaHome, FaCalendarAlt, FaTools, FaModx } from "react-icons/fa";
+import {
+  FaHome,
+  FaCalendarAlt,
+  FaTools,
+  FaModx,
+  FaWpforms,
+} from "react-icons/fa";
 import { GoRepoPush } from "react-icons/go";
+import { SiRedux } from "react-icons/si";
+import { paths } from "./paths";
 
 const routes = [
   {
-    path: "/",
+    path: paths.Root,
     name: "Dashboard",
     icon: <FaHome />,
   },
   {
-    path: "/Calendar",
+    path: paths.Calendar,
     name: "Calendar",
     icon: <FaCalendarAlt />,
   },
   {
-    path: "/Reports",
+    path: paths.Forms,
+    name: "Forms",
+    icon: <FaWpforms />,
+  },
+  {
+    path: paths.Modal,
+    name: "Modal",
+    icon: <FaModx />,
+  },
+  {
+    path: paths.Reports,
     name: "Reports",
     icon: <GoRepoPush />,
   },
   {
-    path: "/Tools",
-    name: "Tools",
-    icon: <FaTools />,
+    path: paths.Redux,
+    name: "Redux",
+    icon: <SiRedux />,
   },
   {
-    path: "/Modal",
-    name: "Modal",
-    icon: <FaModx />,
+    path: paths.Tools,
+    name: "Tools",
+    icon: <FaTools />,
   },
 ];
 
