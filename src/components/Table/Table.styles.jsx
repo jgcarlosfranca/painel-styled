@@ -1,74 +1,101 @@
 import styled from "styled-components";
 
-export const StyledTab = styled.div`
+export const StyledTableResponsiveConteiner = styled.div`
+  display: flex;
   width: 100%;
-  height: auto;
-  min-height: 400px;
-  background: ${(props) => props.theme.colors.sidebarBackgroud};
-  margin: 1.5rem 1.5rem 0.5rem 1.5rem;
-  padding: 1.2rem 1rem;
-  color: ${(props) => props.theme.colors.text};
-  border-radius: 1rem;
+  -webkit-overflow-scrolling: touch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 11px;
+  margin-top: 15px;
 
-  @media (max-width: 769px) {
+  @media (max-width: 1600px) {
     padding: 2rem 0;
   }
 `;
 
-export const StyledTabUl = styled.ul`
-  width: 60%;
-  margin: 0 auto 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+export const StyledTable = styled.table`
+  width: 100%;
+  margin-bottom: 1rem;
+  color: ${(props) => props.theme.colors.text};
+  font-size: 15px;
 
   @media (max-width: 768px) {
     width: 90%;
   }
 
-  li {
-    width: 50%;
-    padding: 0.9rem;
-    list-style: none;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.7s;
+  td,
+  th {
+    padding: 0.75rem;
+    vertical-align: top;
+    color: ${(props) => props.theme.colors.text};
+    input {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: ${(props) => props.theme.colors.contrastBackgroud};
+      .checked {
+        background-color: ${(props) => props.theme.colors.primaryButtonColor};
+      }
+    }
   }
 
-  li:nth-child(n) {
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-family: Bahnschrift SemiBold;
+  td {
+    svg {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      fill: ${(props) => props.theme.colors.tables?.updateIcons};
+      &:hover {
+        transition: transform 1s;
+      }
+      &:active {
+        transition: transform 0.3s;
+        transform: scale(0.5);
+      }
+    }
   }
 
-  li:hover {
-    background-color: ${(props) => props.theme.colors.primaryButtonColor};
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-      background 0s, border 0s;
-    box-shadow: 0px 0px 10px 3px
-      ${(props) => props.theme.colors.primaryButtonColor};
-    -webkit-box-shadow: 0px 0px 10px 3px
-      ${(props) => props.theme.colors.primaryButtonColor};
-    -moz-box-shadow: 0px 0px 10px 3px
-      ${(props) => props.theme.colors.primaryButtonColor};
+  tbody td {
+    justify-content: space-between;
+    border-left: ${(props) => props.theme.colors.tables?.borderTd};
+    border-right: ${(props) => props.theme.colors.tables?.borderTd};
+    border-bottom: ${(props) => props.theme.colors.tables?.borderTd};
+    input {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: ${(props) => props.theme.colors.contrastBackgroud};
+      .checked {
+        background-color: ${(props) => props.theme.colors.primaryButtonColor};
+      }
+      svg {
+        color: ${(props) => props.theme.colors.tables?.updateIcons};
+        fill: ${(props) => props.theme.colors.tables?.updateIcons};
+      }
+    }
   }
 
-  li.active {
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-      background 0s, border 0s;
-    background-color: ${(props) => props.theme.colors.primaryButtonColor};
-  }
-`;
+  thead th {
+    background-color: ${(props) => props.theme.colors.contrastBackgroud};
+    vertical-align: bottom;
+    border-left: ${(props) => props.theme.colors.tables?.borderTd};
+    border-right: ${(props) => props.theme.colors.tables?.borderTd};
+    border-top: ${(props) => props.theme.colors.tables?.borderTd};
+    border-bottom: 2px solid #dee2e6;
 
-export const StyledTabBody = styled.div`
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background 0s,
-    border 0s;
-  width: 100%;
-  height: auto;
-  min-height: 400px;
-  color: ${(props) => props.theme.colors.primaryButtonColor};
+    :nth-child(1) {
+      border-radius: 10px 0 0 0;
+    }
+    :nth-last-child(1) {
+      border-radius: 0 10px 0 0;
+    }
+  }
+
+  tbody + tbody {
+    border-top: 2px solid #dee2e6;
+  }
 `;
