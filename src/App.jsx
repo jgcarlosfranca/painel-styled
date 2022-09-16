@@ -11,12 +11,15 @@ import { BodyConteiner } from "./components/BodyConteiner";
 import usePersistedState from "./utils/Hooks/usePersistentState";
 import Light from "./styles/Themes/Light";
 import Dark from "./styles/Themes/Dark";
+import { paths } from "./routes/paths";
 
 import Home from "./pages/Home/Home";
 import Calendar from "./pages/Calendar/Calendar";
 import Reports from "./pages/Reports/Reports";
 import Tools from "./pages/Tools/Tools";
 import ModalPage from "./pages/Modal/ModalPage";
+import FormsPage from "./pages/Forms/FormsPage";
+import ReduxPage from "./pages/ReduxPages/ReduxPage";
 
 function App() {
   const [theme, setTheme] = usePersistedState("theme", Dark);
@@ -35,11 +38,13 @@ function App() {
             <Header toggleTheme={toggleTheme} />
             <GlassEffectConteiner />
             <Routes>
-              <Route element={<Home />} exact path="/" />
-              <Route element={<Calendar />} exact path="/Calendar" />
-              <Route element={<Reports />} exact path="/Reports" />
-              <Route element={<Tools />} exact path="/Tools" />
-              <Route element={<ModalPage />} exact path="/Modal" />
+              <Route element={<Home />} exact path={paths.Root} />
+              <Route element={<Calendar />} exact path={paths.Calendar} />
+              <Route element={<Reports />} exact path={paths.Reports} />
+              <Route element={<Tools />} exact path={paths.Tools} />
+              <Route element={<ModalPage />} exact path={paths.Modal} />
+              <Route element={<FormsPage />} exact path={paths.Forms} />
+              <Route element={<ReduxPage />} exact path={paths.Redux} />
             </Routes>
           </BodyConteiner>
         </Router>
