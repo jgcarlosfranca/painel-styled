@@ -26,6 +26,7 @@ const darkTheme = {
       borderTd: "2px solid #dee2e6",
       borderTr: "2px solid #dee2e6",
       updateIcons: "#f5f5f5",
+      posts: "5px solid #f5f5f5",
     },
   },
 };
