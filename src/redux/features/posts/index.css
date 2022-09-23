@@ -4,7 +4,7 @@ section {
 
 article {
     margin: 0.5em 0.5em 0.5em 0;
-    border: 5px solid whitesmoke;
+    border: 5px solid #f5f5f5;
     border-radius: 10px;
     padding: 1em;
 }
