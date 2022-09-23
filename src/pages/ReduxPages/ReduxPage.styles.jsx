@@ -6,4 +6,6 @@ export const StyledReduxPageConteiner = styled.div`
   flex-wrap: wrap;
   padding: 1vh 5px 0 5px;
   width: 100%;
+  min-width: 720px;
+  height: 80vh;
 `;
