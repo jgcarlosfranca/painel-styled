@@ -1,14 +1,14 @@
 import React from "react";
 import { StyledReduxPageConteiner } from "./ReduxPage.styles";
-import { Card } from "../../components/Card";
+import { BackGroundFixedCard } from "../../components/BackGroundFixedCard/BackGroundFixedCard";
 import PostsList from "../../redux/features/posts/PostsList";
 
 const ReduxPage = () => {
   return (
     <StyledReduxPageConteiner>
-      <Card>
+      <BackGroundFixedCard>
         <PostsList />
-      </Card>
+      </BackGroundFixedCard>
     </StyledReduxPageConteiner>
   );
 };
