@@ -23,9 +23,10 @@ const LightTheme = {
     checkBoxSecundary: "#bebebe",
     loadingSpiner: "#0066FF",
     tables: {
-      borderTd: "2px solid #a4a4a49b",
-      borderTr: "2px solid #a4a4a49b",
+      borderTd: "2px solid #333",
+      borderTr: "2px solid #333",
       updateIcons: "#000000",
+      posts: "5px solid #333",
     },
   },
 };
