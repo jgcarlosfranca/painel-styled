@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectAllPosts } from "./postsSlice";
+import { StyledPostArticle } from "./PostList.styles";
+import './index.css';
 
 import React from "react";
 
@@ -7,10 +9,10 @@ const PostsList = () => {
   const posts = useSelector(selectAllPosts);
 
   const renderedPosts = posts.map((post) => (
-    <article key={post.id}>
+    <StyledPostArticle key={post.id}>
       <h3>{post.title}</h3>
       <p>{post.content.substring(0, 100)}</p>
-    </article>
+    </StyledPostArticle>
   ));
 
   return (
