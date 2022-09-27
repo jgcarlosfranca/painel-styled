@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSlimSideBar = styled.div`
-  z-index: 10;
+  z-index: 990;
   height: 100vh;
   position: sticky;
   top: 0%;
