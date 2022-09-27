@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSideBar = styled.div`
   height: 100vh;
-  z-index: 10;
+  z-index: 990;
   position: sticky;
   top: 0%;
   left: 0%;
