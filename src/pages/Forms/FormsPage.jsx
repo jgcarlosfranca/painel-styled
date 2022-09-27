@@ -1,14 +1,14 @@
 import React from "react";
 import { StyledFormsPageConteiner } from "./FormsPage.styles";
-import { Card } from "../../components/Card";
-import { ToggleSwitch } from "../../components/ToggleSwitch";
+import { BackGroundFixedCard } from "../../components/BackGroundFixedCard/BackGroundFixedCard";
+import ToggleSwitchCustom from "../../components/SwitchToogle/switchCustom";
 
 const FormsPage = () => {
   return (
     <StyledFormsPageConteiner>
-      <Card>
-        <ToggleSwitch />
-      </Card>
+      <BackGroundFixedCard>
+        <ToggleSwitchCustom />
+      </BackGroundFixedCard>
     </StyledFormsPageConteiner>
   );
 };
