@@ -9,6 +9,7 @@ export const StyledButton = styled.button`
   color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.primaryButtonColor};
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   transition: transform ease-in 0.5s;
 
