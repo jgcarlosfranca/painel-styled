@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledBackGroundFixedCard = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: ${(props) => props.theme.colors.sidebarBackgroud};
   margin: 1.5rem 1.5rem 0.5rem 1.5rem;
   padding: 1.2rem 1rem;
