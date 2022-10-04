@@ -20,7 +20,6 @@ export const LargeSideBar = () => {
   const [sideBarCollapse, setSideBarCollapse] = useState(false);
 
   const toogleSidebar = () => {
-    console.log("clicou na lock sidebar!");
     if (sideBarCollapse) {
       setSideBarWidth("5%");
       setSideBarCollapse(false);
