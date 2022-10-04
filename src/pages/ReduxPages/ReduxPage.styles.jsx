@@ -7,5 +7,4 @@ export const StyledReduxPageConteiner = styled.div`
   padding: 1vh 5px 0 5px;
   width: 100%;
   min-width: 720px;
-  height: 80vh;
 `;
