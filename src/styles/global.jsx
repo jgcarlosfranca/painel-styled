@@ -17,11 +17,13 @@ body{
 }
 ::-webkit-scrollbar {
     width: 10px;
+    z-index:10;
 }
 
  ::-webkit-scrollbar-track {
     background-color: ${(props) => props.theme.colors.sidebarBackgroud}
     ;
+    z-index:10;
 }
 
  ::-webkit-scrollbar-thumb {
@@ -29,5 +31,6 @@ body{
     background-color: ${(props) => props.theme.colors.sideBarThumb}
     ;
     border-radius: 100px;
+    z-index:10;
 }
 `;
