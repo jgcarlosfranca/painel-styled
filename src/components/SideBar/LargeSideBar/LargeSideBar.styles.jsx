@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const StyledSideBar = styled.div`
+  display: flex;
   height: 100vh;
   z-index: 990;
   position: sticky;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   background-color: ${(props) => props.theme.colors.sidebarBackgroud};
   width: 15%;
-  min-width: 255px;
+  min-width: 270px;
   overflow-y: scroll;
   transition: linear 0.5s;
   ::-webkit-scrollbar {
