@@ -13,9 +13,3 @@ export function range(start, end, step = 1) {
 
     }
 }
-
-/**
- * usable exemplo:
- * for (const n of range(0,100,5)) console.log(n)
- * 
- */
