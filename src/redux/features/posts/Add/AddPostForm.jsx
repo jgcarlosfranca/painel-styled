@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { nanoid } from "@reduxjs/toolkit";
 import {
   AddPostWrapper,
   AddPostSection,
@@ -21,13 +20,15 @@ const AddPostForm = () => {
   const onTitleChanged = (event) => setTitle(event.target.value);
   const onContentChanged = (event) => setContent(event.target.value);
 
-  const onSavePostClicked = () => {
+  const onSavePostClicked = (event) => {
+    event.preventDefault();
     if (title && content) {
       dispatch(postAdded(title, content));
       setTitle("");
       setContent("");
     }
   };
+
 
   return (
     <AddPostWrapper>
@@ -50,7 +51,7 @@ const AddPostForm = () => {
             onChange={onContentChanged}
           />
           <Button
-            onClick={onSavePostClicked}
+            onClick={(event) => onSavePostClicked(event)}
             titulo={"Save Post"}
             tamanho={"200px"}
           ></Button>
