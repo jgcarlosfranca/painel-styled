@@ -6,7 +6,7 @@ export const StyledButton = styled.button`
   font-weight: 600;
   text-transform: uppercase;
   padding: 0.6em;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.textLight};
   background-color: ${(props) => props.theme.colors.primaryButtonColor};
   border-radius: 5px;
   border: none;
@@ -14,7 +14,6 @@ export const StyledButton = styled.button`
   transition: transform ease-in 0.5s;
 
   &:hover {
-    color: ${(props) => props.theme.colors.text};
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       background 0s, border 0s;
