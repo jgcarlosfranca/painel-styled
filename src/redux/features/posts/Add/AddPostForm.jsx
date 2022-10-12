@@ -23,14 +23,7 @@ const AddPostForm = () => {
 
   const onSavePostClicked = () => {
     if (title && content) {
-      dispatch(
-        postAdded({
-          id: nanoid(),
-          title,
-          content,
-        })
-      );
-
+      dispatch(postAdded(title, content));
       setTitle("");
       setContent("");
     }
@@ -56,7 +49,11 @@ const AddPostForm = () => {
             value={content}
             onChange={onContentChanged}
           />
-          <Button onClick={onSavePostClicked} titulo={'Save Post'} tamanho={'200px'}></Button>
+          <Button
+            onClick={onSavePostClicked}
+            titulo={"Save Post"}
+            tamanho={"200px"}
+          ></Button>
         </AddPostForms>
       </AddPostSection>
     </AddPostWrapper>
