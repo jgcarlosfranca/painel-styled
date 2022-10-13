@@ -9,5 +9,4 @@ export const StyledBackGroundFixedCard = styled.div`
   color: ${(props) => props.theme.colors.text};
   border-radius: 1rem;
 
-  min-width: 720px;
 `;
