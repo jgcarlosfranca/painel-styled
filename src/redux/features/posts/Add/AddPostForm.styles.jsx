@@ -46,3 +46,9 @@ export const AddPostContentTextArea = styled.textarea`
     border-color: ${(props) => props.theme.colors.primaryButtonColor};
   }
 `;
+
+export const buttonFooterWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
