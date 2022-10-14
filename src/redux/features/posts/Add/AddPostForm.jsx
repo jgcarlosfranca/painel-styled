@@ -34,6 +34,8 @@ const AddPostForm = () => {
     }
   };
 
+  const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
+
   // aq seleciona qual user vai fazer uma interação com o post
   const userOptions = users.map((user) => (
     <option key={user.id} value={user.id}>
@@ -59,6 +61,11 @@ const AddPostForm = () => {
             value={title}
             onChange={onTitleChanged}
           />
+          <AddPostLabel htmlFor="postAuthor">Author:</AddPostLabel>
+          <select id="postAuthor" value={userId} onChange={onAuthChanged}>
+            <option value={""}></option>
+            {userOptions}
+          </select>
           <AddPostLabel htmlFor="postContent">Content:</AddPostLabel>
           <AddPostContentTextArea
             id="postContent"
@@ -71,6 +78,7 @@ const AddPostForm = () => {
               onClick={(event) => onSavePostClicked(event)}
               titulo={"Save Post"}
               tamanho={"200px"}
+              disabled={!canSave}
             ></Button>
             <Button
               onClick={(event) => dispatchDummy(event)}
