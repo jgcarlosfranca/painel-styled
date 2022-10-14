@@ -18,7 +18,7 @@ export const StyledButton = styled.button`
 
   margin: 10px 10px 10px 10px;
 
-  &:hover {
+  &:hover:enabled {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       background 0s, border 0s;
@@ -39,7 +39,7 @@ export const StyledButton = styled.button`
           : props.theme.colors.primaryButtonColor};
   }
 
-  &:active {
+  &:active:enabled {
     transition: transform ease-in 0.1s;
     transform: scale(0.9);
     box-shadow: 0 2px 25px
@@ -47,5 +47,8 @@ export const StyledButton = styled.button`
         props.colorBackground
           ? props.colorBackground
           : props.theme.colors.primaryButtonColor};
+  }
+  &:not(:enabled) {
+    filter: grayscale(100%);
   }
 `;
