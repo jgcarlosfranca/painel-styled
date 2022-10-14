@@ -63,7 +63,7 @@ const AddPostForm = () => {
           />
           <AddPostLabel htmlFor="postAuthor">Author:</AddPostLabel>
           <select id="postAuthor" value={userId} onChange={onAuthChanged}>
-            <option value={""}></option>
+            <option value={""}>Selecione...</option>
             {userOptions}
           </select>
           <AddPostLabel htmlFor="postContent">Content:</AddPostLabel>
