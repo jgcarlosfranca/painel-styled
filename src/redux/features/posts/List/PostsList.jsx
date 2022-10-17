@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import { selectAllPosts } from "../postsSlice";
-import { StyledPostArticle } from "./PostList.styles";
-import "./index.css";
+import { StyledPostArticle, StyledPostSection } from "./PostList.styles";
 
 import React from "react";
 
@@ -16,10 +15,10 @@ const PostsList = () => {
   ));
 
   return (
-    <section>
+    <StyledPostSection>
       <h2>Posts</h2>
       {renderedPosts}
-    </section>
+    </StyledPostSection>
   );
 };
 
