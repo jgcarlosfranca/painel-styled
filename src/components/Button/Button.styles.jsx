@@ -49,6 +49,7 @@ export const StyledButton = styled.button`
           : props.theme.colors.primaryButtonColor};
   }
   &:not(:enabled) {
+    cursor: not-allowed;
     filter: grayscale(100%);
   }
 `;
