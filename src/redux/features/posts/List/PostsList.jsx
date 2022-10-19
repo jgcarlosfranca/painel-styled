@@ -3,6 +3,7 @@ import { selectAllPosts } from "../postsSlice";
 import { StyledPostArticle, StyledPostSection } from "./PostList.styles";
 import PostAuthor from "../Author/PostAuthor";
 import TimeAgo from "../TimeAgo";
+import ReactionButton from "../ReactionButton/ReactionButton";
 
 import React from "react";
 
@@ -20,6 +21,7 @@ const PostsList = () => {
         <PostAuthor userId={post.userId} />
         <TimeAgo timeStamp={post.date} />
       </p>
+      <ReactionButton post={post} />
     </StyledPostArticle>
   ));
 
