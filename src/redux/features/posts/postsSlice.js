@@ -56,6 +56,13 @@ const postsSlice = createSlice({
                     }
                 }
             }
+        },
+        reactionAdded(state, action) {
+            const { postId, reaction } = action.payload
+            const existingPost = state.find(post => post.id === postId)
+            if (existingPost) {
+                existingPost.reactions[reaction]++
+            }
         }
     }
 })
