@@ -13,6 +13,12 @@ export const AddPostSection = styled.section`
 export const AddPostForms = styled.form`
   display: flex;
   flex-direction: column;
+  select {
+    background-color: ${(props) => props.theme.colors.contrastBackgroud};
+    color: ${(props) => props.theme.colors.text};
+    border: none;
+    height: 2em;
+  }
 `;
 
 export const AddPostLabel = styled.label`
@@ -20,6 +26,7 @@ export const AddPostLabel = styled.label`
   margin-bottom: 1.1em;
 `;
 export const AddPostinput = styled.input`
+  height: 2em;
   font: inherit;
   margin-bottom: 1em;
   border-color: #404656;
