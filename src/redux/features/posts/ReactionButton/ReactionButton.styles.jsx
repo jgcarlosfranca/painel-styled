@@ -8,3 +8,8 @@ export const StyledReactionButtons = styled.button`
   font-size: 1rem;
   cursor: pointer;
 `;
+
+export const StyledWrapperReactionButtons = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
