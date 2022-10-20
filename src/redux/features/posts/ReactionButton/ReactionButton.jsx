@@ -1,7 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { reactionAdded } from "../postsSlice";
-import { StyledReactionButtons } from "./ReactionButton.styles";
+import {
+  StyledReactionButtons,
+  StyledWrapperReactionButtons,
+} from "./ReactionButton.styles";
 
 const reactionEmoji = {
   thumbsUp: "👍", // ctrl shift p> insert emoji
@@ -27,7 +30,11 @@ const ReactionButton = ({ post }) => {
       </StyledReactionButtons>
     );
   });
-  return <div>{reactionButtons}</div>;
+  return (
+    <StyledWrapperReactionButtons>
+      {reactionButtons}
+    </StyledWrapperReactionButtons>
+  );
 };
 
 export default ReactionButton;
