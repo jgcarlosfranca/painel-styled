@@ -1,34 +1,50 @@
-import { useSelector } from "react-redux";
-import { selectAllPosts } from "../postsSlice";
-import { StyledPostArticle, StyledPostSection } from "./PostList.styles";
-import PostAuthor from "../Author/PostAuthor";
-import TimeAgo from "../TimeAgo";
-import ReactionButton from "../ReactionButton/ReactionButton";
-
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  selectAllPosts,
+  getPostsStatus,
+  getPostsError,
+  fetchPosts,
+} from "../postsSlice";
+import {
+  StyledPostP,
+  StyledPostListTitleH2,
+  StyledPostSection,
+} from "./PostList.styles";
+import PostsExcerpt from "../Excerpt/PostsExcerpt";
+import useOnceEffect from "../../../../utils/Hooks/useOnce";
 
 const PostsList = () => {
+  const dispatch = useDispatch();
   const posts = useSelector(selectAllPosts);
-  const orderedPosts = posts
-    .slice()
-    .sort((a, b) => b.date.localeCompare(a.date));
+  const postStatus = useSelector(getPostsStatus);
+  const error = useSelector(getPostsError);
+  // REACT 18 corno com disparando o useEffetct duas vezes (só substituir o useEffect pelo meu hook)
+  useOnceEffect(() => {
+    if (postStatus === "idle") {
+      console.log("dispatch - use effect");
+      dispatch(fetchPosts());
+    }
+  }, [postStatus, dispatch]);
 
-  const renderedPosts = orderedPosts.map((post) => (
-    <StyledPostArticle key={post.id}>
-      <h3>{post.title}</h3>
-      <p>{post.content.substring(0, 100)}</p>
-      <p className="postCredit">
-        <PostAuthor userId={post.userId} />
-        <TimeAgo timeStamp={post.date} />
-      </p>
-      <ReactionButton post={post} />
-    </StyledPostArticle>
-  ));
+  let content;
+  if (postStatus === "loading") {
+    content = <StyledPostP>"Loading..."</StyledPostP>; // colocar spiner depois
+  } else if (postStatus === "succeeded") {
+    const orderedPosts = posts
+      .slice()
+      .sort((a, b) => b.date.localeCompare(a.date));
+    content = orderedPosts.map((post) => (
+      <PostsExcerpt key={post.id} post={post} />
+    ));
+  } else if (postStatus === "failed") {
+    content = <StyledPostP>{error}</StyledPostP>;
+  }
 
   return (
     <StyledPostSection>
-      <h2>Posts</h2>
-      {renderedPosts}
+      <StyledPostListTitleH2>Posts</StyledPostListTitleH2>
+      {content}
     </StyledPostSection>
   );
 };
