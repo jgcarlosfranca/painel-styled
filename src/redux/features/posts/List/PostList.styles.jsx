@@ -18,6 +18,17 @@ export const StyledPostArticle = styled.article`
   }
 `;
 
+export const StyledPostP = styled.p`
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+`;
+
+export const StyledPostListTitleH2 = styled.h2`
+  font-size: 2.1rem;
+`;
+
 export const StyledPostSection = styled.section`
   margin-top: 1em;
 
