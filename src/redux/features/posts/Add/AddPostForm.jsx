@@ -10,7 +10,7 @@ import {
   buttonFooterWrapper,
 } from "./AddPostForm.styles";
 import { Button } from "../../../../components/Button";
-import { postAdded } from "../../posts/postsSlice";
+import { postAdded } from "../postsSlice";
 import { selectAllUsers } from "../../users/userSlice";
 
 const AddPostForm = () => {
