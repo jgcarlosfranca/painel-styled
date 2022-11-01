@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const CUSTOM_POST_URL = 'http://localhost:5000/MyPostsList'; // precisa colocar o server up
+const CUSTOM_POST_URL = 'http://localhost:5000/MyUsers'; // precisa colocar o server up
 
 const initialState = []
 
