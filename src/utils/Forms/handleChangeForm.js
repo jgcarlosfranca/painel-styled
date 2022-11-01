@@ -1,4 +1,4 @@
-const handleChangeForms = (e, fieldFunction) => {
+const handleChangeInput = (e, setStateFn) => {
     const type = e.target.type;
     const name = e.target.name;
     let value = "";
@@ -10,7 +10,7 @@ const handleChangeForms = (e, fieldFunction) => {
         value = e.target.value;
     }
 
-    fieldFunction((prevData) => ({...prevData, [name]: value }));
+    setStateFn((prevData) => ({...prevData, [name]: value }));
 };
 
-export default handleChangeForms;
+export default handleChangeInput;
