@@ -15,27 +15,37 @@ import { selectAllUsers } from "../../users/userSlice";
 import { addNewPost } from "../postsSlice";
 
 const AddPostForm = () => {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [userId, setUserId] = useState("");
 
+  const [addRequestStatus, setAddRequestStatus] = useState("idle"); // observa o status da requiaição do redux
+
   const users = useSelector(selectAllUsers); // aq pega todos os users do store do redux
-  const dispatch = useDispatch();
 
   const onTitleChanged = (event) => setTitle(event.target.value);
   const onContentChanged = (event) => setContent(event.target.value);
   const onAuthChanged = (event) => setUserId(event.target.value);
 
-  const onSavePostClicked = (event) => {
-    event.preventDefault();
-    if (title && content) {
-      dispatch(postAdded(title, content, userId));
-      setTitle("");
-      setContent("");
+  const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
+
+  const onSavePostClicked = () => {
+    if (canSave) {
+      try {
+        setAddRequestStatus("pending"); // atualizando o status da req redux
+        dispatch(addNewPost({ title, body: content, userId })).unwrap();
+
+        setTitle("");
+        setContent("");
+        setUserId("");
+      } catch (err) {
+        console.error("Failed to save the post", err);
+      } finally {
+        setAddRequestStatus("idle");
+      }
     }
   };
-
-  const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
 
   // aq seleciona qual user vai fazer uma interação com o post
   const userOptions = users.map((user) => (
@@ -76,7 +86,7 @@ const AddPostForm = () => {
           />
           <buttonFooterWrapper>
             <Button
-              onClick={(event) => onSavePostClicked(event)}
+              onClick={onSavePostClicked}
               titulo={"Save Post"}
               tamanho={"200px"}
               disabled={!canSave}
