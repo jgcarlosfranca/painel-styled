@@ -12,6 +12,7 @@ import {
 import { Button } from "../../../../components/Button";
 import { postAdded } from "../postsSlice";
 import { selectAllUsers } from "../../users/userSlice";
+import { addNewPost } from "../postsSlice";
 
 const AddPostForm = () => {
   const [title, setTitle] = useState("");
