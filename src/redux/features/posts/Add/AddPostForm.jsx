@@ -28,12 +28,13 @@ const AddPostForm = () => {
   const onContentChanged = (event) => setContent(event.target.value);
   const onAuthChanged = (event) => setUserId(event.target.value);
 
-  const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
+  const canSave = [title, content, userId].every(Boolean) && addRequestStatus === 'idle';
 
   const onSavePostClicked = () => {
     if (canSave) {
       try {
         setAddRequestStatus("pending"); // atualizando o status da req redux
+        /*dispatch addNewPosts*/
         dispatch(addNewPost({ title, body: content, userId })).unwrap();
 
         setTitle("");
