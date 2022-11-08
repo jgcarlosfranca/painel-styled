@@ -16,6 +16,10 @@ export const fetchPosts = createAsyncThunk('posts/fetchPosts', async() => {
     return response.data
 })
 
+export const addNewPost = createAsyncThunk('posts/addNewPost', async(initialPost) => {
+    const response = await axios.post(CUSTOM_POST_URL, initialPost)
+    return response.data
+})
 
 const postsSlice = createSlice({
     name: 'posts',
