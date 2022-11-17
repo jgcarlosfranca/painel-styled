@@ -37,7 +37,12 @@ const routes = [
   },
   {
     path: paths.Redux,
-    name: "Redux",
+    name: "Redux with Thunk",
+    icon: <SiRedux />,
+  },
+  {
+    path: paths.ReduxSimple,
+    name: "Redux Simple",
     icon: <SiRedux />,
   },
   {
