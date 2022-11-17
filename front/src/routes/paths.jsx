@@ -5,6 +5,7 @@ const paths = {
   Modal: "Modal",
   Reports: "/Reports",
   Redux: "/Redux",
+  ReduxSimple: "/ReduxSimple",
   Tools: "/Tools",
 };
 
