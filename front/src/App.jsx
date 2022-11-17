@@ -45,6 +45,7 @@ function App() {
               <Route element={<ModalPage />} exact path={paths.Modal} />
               <Route element={<FormsPage />} exact path={paths.Forms} />
               <Route element={<ReduxPage />} exact path={paths.Redux} />
+              <Route element={<ReduxPage />} exact path={paths.ReduxSimple} />
             </Routes>
           </BodyConteiner>
         </Router>
