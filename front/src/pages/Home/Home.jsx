@@ -1,5 +1,7 @@
 import React from "react";
 import { StyledHomeConteiner } from "./Home.styles";
+import { scrollToTheTop } from "../../utils/useFullFunction/scrollToTheTop";
+import { Button } from "../../components/Button";
 
 const Home = () => {
   return (
@@ -535,6 +537,7 @@ const Home = () => {
       Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home
       Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home
       Home Home Home
+      <Button titulo="Volte ao Top" onClick={scrollToTheTop} />
     </StyledHomeConteiner>
   );
 };
