@@ -69,12 +69,12 @@ export const StyledSideBarItem = styled.li`
   align-items: center;
   border-radius: 10px;
   margin: 10px;
-  font-size: 20px !important;
+  font-size: 1.15rem !important;
   color: ${(props) => props.theme.colors.text};
   text-decoration: none;
   &:hover {
     color: ${(props) => props.theme.colors.text};
-    padding: 15px 30px 20px 25px;
+    padding: 15px 20px 20px 25px;
     transition: ease 0.3s;
   }
 `;
