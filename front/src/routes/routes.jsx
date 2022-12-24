@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { GoRepoPush } from "react-icons/go";
 import { SiRedux } from "react-icons/si";
+import { ImLab } from "react-icons/im";
 import { paths } from "./paths";
 
 const routes = [
@@ -49,6 +50,11 @@ const routes = [
     path: paths.Tools,
     name: "Tools",
     icon: <FaTools />,
+  },
+  {
+    path: paths.LabFont,
+    name: "Lab Fonts",
+    icon: <ImLab />,
   },
 ];
 
