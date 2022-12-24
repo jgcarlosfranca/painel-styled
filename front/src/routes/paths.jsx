@@ -7,6 +7,7 @@ const paths = {
   Redux: "/Redux",
   ReduxSimple: "/ReduxSimple",
   Tools: "/Tools",
+  LabFont: 'Lab/Fonts',
 };
 
 export { paths };
