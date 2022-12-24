@@ -20,6 +20,7 @@ import Tools from "./pages/Tools/Tools";
 import ModalPage from "./pages/Modal/ModalPage";
 import FormsPage from "./pages/Forms/FormsPage";
 import ReduxPage from "./pages/ReduxPages/ReduxPage";
+import LabFont from "./pages/LabFont/LabFontPage";
 
 function App() {
   const [theme, setTheme] = usePersistedState("theme", Dark);
@@ -46,6 +47,7 @@ function App() {
               <Route element={<FormsPage />} exact path={paths.Forms} />
               <Route element={<ReduxPage />} exact path={paths.Redux} />
               <Route element={<ReduxPage />} exact path={paths.ReduxSimple} />
+              <Route element={<ReduxPage />} exact path={paths.LabFont} />
             </Routes>
           </BodyConteiner>
         </Router>
