@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { ConteinerFont } from "./LabFontPage.styles";
+import { ConteinerFont, WrapperLab } from "./LabFontPage.styles";
 
 const LabFontPage = () => {
-
   return (
-    <ConteinerFont>
-    </ConteinerFont>
+    <WrapperLab>
+      <ConteinerFont>
+        <h2>BEAUTIFUL</h2>
+        <h2>BEAUTIFUL</h2>
+      </ConteinerFont>
+    </WrapperLab>
   );
 };
 
