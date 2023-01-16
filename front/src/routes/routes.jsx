@@ -17,6 +17,11 @@ const routes = [
     icon: <FaHome />,
   },
   {
+    path: paths.Beautify,
+    name: "Lab Beautify",
+    icon: <ImLab />,
+  },
+  {
     path: paths.Calendar,
     name: "Calendar",
     icon: <FaCalendarAlt />,
