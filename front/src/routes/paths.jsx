@@ -8,6 +8,7 @@ const paths = {
   ReduxSimple: "/ReduxSimple",
   Tools: "/Tools",
   LabFont: 'Lab/Fonts',
+  Beautify: '/Beautify'
 };
 
 export { paths };
