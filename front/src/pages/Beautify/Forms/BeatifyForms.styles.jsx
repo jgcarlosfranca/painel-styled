@@ -15,23 +15,24 @@ export const StyledBeautifyConteiner = styled.div`
     justify-content: center;
   }
   .pager button {
+    z-index: 99;
     flex: 0 0 42px;
     height: 24px;
     padding: 6px;
     transition: 0.4s;
     border-radius: 24px;
-    color: "#383142";
+    background-color: #383142;
   }
   .pager button span {
     height: 30px;
     width: 100%;
     border-radius: 42px;
-    color: "#383142";
+    background-color: #383142;
     transition: 0.4s;
   }
 
   .pager button:focus {
     flex: 0 0 80px;
-    color: "#8f44fd";
+    background-color: #8f44fd;
   }
 `;
