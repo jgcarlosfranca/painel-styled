@@ -23,6 +23,23 @@ const BeautifyForms = () => {
           <span></span>
         </button>
       </div>
+      <div className="pager-glummy">
+        <button>
+          <span></span>
+        </button>
+        <button>
+          <span></span>
+        </button>
+        <button>
+          <span></span>
+        </button>
+        <button>
+          <span></span>
+        </button>
+        <button>
+          <span></span>
+        </button>
+      </div>
     </StyledBeautifyConteiner>
   );
 };
