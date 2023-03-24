@@ -1,55 +1,25 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
-  width: ${(props) => props.tamanho};
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0.6em;
-  color: ${(props) => props.theme.colors.textLight};
-  background-color: ${(props) =>
-    props.colorBackground
-      ? props.colorBackground
-      : props.theme.colors.primaryButtonColor};
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: transform ease-in 0.5s;
+export const SlideWrapper = styled.div`
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+`;
 
-  margin: 10px 10px 10px 10px;
+export const ImageBox = styled.div`
+  position: relative;
+  background-color: #343434;
+  width: 100%;
+  height: 85%;
 
-  &:hover:enabled {
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-      background 0s, border 0s;
-    box-shadow: 0px 0px 10px 3px
-      ${(props) =>
-        props.colorBackground
-          ? props.colorBackground
-          : props.theme.colors.primaryButtonColor};
-    -webkit-box-shadow: 0px 0px 10px 3px
-      ${(props) =>
-        props.colorBackground
-          ? props.colorBackground
-          : props.theme.colors.primaryButtonColor};
-    -moz-box-shadow: 0px 0px 10px 3px
-      ${(props) =>
-        props.colorBackground
-          ? props.colorBackground
-          : props.theme.colors.primaryButtonColor};
-  }
-
-  &:active:enabled {
-    transition: transform ease-in 0.1s;
-    transform: scale(0.9);
-    box-shadow: 0 2px 25px
-      ${(props) =>
-        props.colorBackground
-          ? props.colorBackground
-          : props.theme.colors.primaryButtonColor};
-  }
-  &:not(:enabled) {
-    cursor: not-allowed;
-    filter: grayscale(100%);
+  img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
   }
 `;
