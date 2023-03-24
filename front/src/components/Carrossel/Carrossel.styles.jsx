@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const SlideWrapper = styled.div`
   position: relative;
@@ -10,7 +10,7 @@ export const ImageBox = styled.div`
   position: relative;
   background-color: #343434;
   width: 100%;
-  height: 85%;
+  height: 95%;
 
   img {
     position: absolute;
@@ -22,4 +22,26 @@ export const ImageBox = styled.div`
     max-width: 100%;
     max-height: 100%;
   }
+`;
+
+export const NavButton = styled.button`
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  background: rgba(255, 255, 255, 0.411);
+
+  ${({ position }) =>
+    position === "left" &&
+    css`
+      left: 10px;
+    `}
+
+  ${({ position }) =>
+    position === "right" &&
+    css`
+      right: 10px;
+    `}
 `;
