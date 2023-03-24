@@ -45,3 +45,13 @@ export const NavButton = styled.button`
       right: 10px;
     `}
 `;
+
+export const ImageCaption = styled.span`
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.7);
+`;
