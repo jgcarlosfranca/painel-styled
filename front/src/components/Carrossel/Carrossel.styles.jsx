@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const SlideWrapper = styled.div`
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 40vh;
 `;
 
 export const ImageBox = styled.div`
