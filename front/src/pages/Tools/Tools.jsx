@@ -9,6 +9,8 @@ import { Button } from "../../components/Button";
 import imagemTeste from "../../assets/img/elemento_agua.png";
 import { Carrossel } from "../../components/Carrossel/Carrossel";
 
+import slideItems from "../../mocks/CarrossselData/CarrosselItens";
+
 const Tools = () => {
   return (
     <StyledToolsConteiner>
@@ -31,7 +33,7 @@ const Tools = () => {
         <Button />
       </Card>
       <Card>
-        <Carrossel />
+        <Carrossel items={slideItems} />
       </Card>
     </StyledToolsConteiner>
   );
