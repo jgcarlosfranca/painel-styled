@@ -8,7 +8,7 @@ export const SlideWrapper = styled.div`
 
 export const ImageBox = styled.div`
   position: relative;
-  background-color: #343434;
+  background-color: ${(props) => props.theme.colors.contrastBackgroud};
   width: 100%;
   height: 95%;
 
