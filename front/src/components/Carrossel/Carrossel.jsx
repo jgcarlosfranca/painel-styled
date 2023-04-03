@@ -4,6 +4,7 @@ import {
   ImageBox,
   NavButton,
   ImageCaption,
+  Image,
 } from "./Carrossel.styles";
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 
@@ -31,7 +32,7 @@ export function Carrossel(props) {
   return (
     <SlideWrapper>
       <ImageBox>
-        <img alt={items[activeIndex].caption} src={items[activeIndex].image} />
+        <Image alt={items[activeIndex].caption} src={items[activeIndex].image} />
         <ImageCaption>{items[activeIndex].caption}</ImageCaption>
         <NavButton position="left" onClick={moveTo(activeIndex - 1)}>
           <BiLeftArrow />
