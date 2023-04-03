@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 export const SlideWrapper = styled.div`
   position: relative;
@@ -11,18 +11,47 @@ export const ImageBox = styled.div`
   background-color: ${(props) => props.theme.colors.contrastBackgroud};
   width: 100%;
   height: 95%;
+`;
 
-  img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    max-width: 100%;
-    max-height: 100%;
+const fadeOut = keyframes`
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 `;
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
+
+export const Image = styled.img`
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+`;
+
+const FadeOutImage = styled(Image)`
+  animation-name: ${fadeOut};
+`;
+
+const FadeInImage = styled(Image)`
+  animation-name: ${fadeIn};
+`;
+
 
 export const NavButton = styled.button`
   cursor: pointer;
