@@ -44,11 +44,11 @@ export const Image = styled.img`
   max-height: 100%;
 `;
 
-const FadeOutImage = styled(Image)`
+export const FadeOutImage = styled(Image)`
   animation-name: ${fadeOut};
 `;
 
-const FadeInImage = styled(Image)`
+export const FadeInImage = styled(Image)`
   animation-name: ${fadeIn};
 `;
 
