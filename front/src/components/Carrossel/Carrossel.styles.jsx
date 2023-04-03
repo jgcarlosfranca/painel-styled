@@ -42,6 +42,8 @@ export const Image = styled.img`
   left: 0;
   max-width: 100%;
   max-height: 100%;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 `;
 
 export const FadeOutImage = styled(Image)`
