@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AccordionWrapper, Title, Content, Text } from "./Accordion.styles";
 
-export const AccordionAnimated = (props) => {
+export const AccordionAnimated = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
