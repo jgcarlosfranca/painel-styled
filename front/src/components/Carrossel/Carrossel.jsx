@@ -15,10 +15,10 @@ export function Carrossel(props) {
     items: props.items,
     activeIndex: 0, // begin with the first item
   });
-  const [nextActiveIndex, setNextActiveIndex] = useState(1);
+  const [outActiveIndex, setOutActiveIndex] = useState(1);
   const [isFading, setIsFading] = useState(false);
 
-  const moveTo = (newIndex) => () => {
+  const moveTo = (newIndex, diretion) => () => {
     setIsFading(true);
     if (newIndex === -1) {
       // jump from the first image to the last
@@ -26,33 +26,44 @@ export function Carrossel(props) {
         ...s,
         activeIndex: items.length - 1,
       }));
-      setNextActiveIndex(items.length);
+      setOutActiveIndex(0);
       setIsFading(false);
+      console.log(
+        `🚀 ~ file: teste(newIndex === -1) newIndex: ${newIndex}, activeIndex: ${activeIndex}, outActiveIndex: ${outActiveIndex} `
+      );
       return;
     }
     if (newIndex === items.length) {
       // jump from the last image to the first
       setState((s) => ({ ...s, activeIndex: 0 }));
-      setNextActiveIndex(1);
+      setOutActiveIndex(items.length - 1);
       setIsFading(false);
+      console.log(
+        `🚀 ~ file: teste(newIndex === items.length) newIndex: ${newIndex}, activeIndex: ${activeIndex}, outActiveIndex: ${outActiveIndex} `
+      );
       return;
     }
 
     if (newIndex + 1 === items.length) {
-      // jump from the last image to the first
       setState((s) => ({
         ...s,
         activeIndex: newIndex,
       }));
-      setNextActiveIndex(0);
+      setOutActiveIndex(0);
       setIsFading(false);
+      console.log(
+        `🚀 ~ file: teste(newIndex + 1 === items.length) newIndex: ${newIndex}, activeIndex: ${activeIndex}, outActiveIndex: ${outActiveIndex} `
+      );
       return;
     }
     setState((s) => ({
       ...s,
       activeIndex: newIndex,
     }));
-    setNextActiveIndex(newIndex + 1);
+    setOutActiveIndex(newIndex - 1);
+    console.log(
+      `🚀 ~ file: newIndex: ${newIndex}, activeIndex: ${activeIndex}, outActiveIndex: ${outActiveIndex} `
+    );
   };
 
   return (
@@ -65,12 +76,12 @@ export function Carrossel(props) {
         {isFading ? (
           <>
             <FadeOutImage
-              src={items[activeIndex].image}
-              alt={items[activeIndex].caption}
+              src={items[outActiveIndex].image}
+              alt={items[outActiveIndex].caption}
             />
             <FadeInImage
-              src={items[nextActiveIndex].image}
-              alt={items[nextActiveIndex].caption}
+              src={items[activeIndex].image}
+              alt={items[activeIndex].caption}
             />
           </>
         ) : (
@@ -80,10 +91,16 @@ export function Carrossel(props) {
           />
         )}
         <ImageCaption>{items[activeIndex].caption}</ImageCaption>
-        <NavButton position="left" onClick={moveTo(activeIndex - 1)}>
+        <NavButton
+          position="left"
+          onClick={moveTo(activeIndex - 1, "backward")}
+        >
           <BiLeftArrow />
         </NavButton>
-        <NavButton position="right" onClick={moveTo(activeIndex + 1)}>
+        <NavButton
+          position="right"
+          onClick={moveTo(activeIndex + 1, "forward")}
+        >
           <BiRightArrow />
         </NavButton>
       </ImageBox>
