@@ -9,6 +9,8 @@ import { Button } from "../../components/Button";
 import imagemTeste from "../../assets/img/elemento_agua.png";
 import { Carrossel } from "../../components/Carrossel/Carrossel";
 
+import { AccordionAnimated } from "../../components/Accordion/AccordionAnimated";
+
 import slideItems from "../../mocks/CarrossselData/CarrosselItens";
 
 const Tools = () => {
@@ -28,6 +30,12 @@ const Tools = () => {
         title={mocks.accordionData.question}
         content={mocks.accordionData.answer}
       />
+      <Card>
+        <AccordionAnimated
+          title={"Accordion Animated Title"}
+          content={mocks.accordionData.answer}
+        />
+      </Card>
       <Card>
         <CardButton image={imagemTeste} onClick={() => console.log("clicou")} />
         <Button />
