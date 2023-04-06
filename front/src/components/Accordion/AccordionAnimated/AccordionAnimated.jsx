@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AccordionWrapper, Title, Content, Text } from "./Accordion.styles";
+import { AccordionWrapper, Title, Content, Text } from "./AccordionAnimated.styles";
 
 export const AccordionAnimated = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
