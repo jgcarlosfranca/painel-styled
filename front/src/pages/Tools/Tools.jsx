@@ -44,7 +44,7 @@ const Tools = () => {
         <Button />
       </Card>
       <Card>
-        <button onClick={() => setIsOpen(!isOpen)}>teste</button>
+        <Button onClick={() => setIsOpen(!isOpen)} titulo="Open Modal"/>
         <Modal
           isOpen={isOpen}
           showing={isOpen}
