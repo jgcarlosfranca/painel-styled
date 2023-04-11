@@ -11,6 +11,7 @@ import { Carrossel } from "../../components/Carrossel/Carrossel";
 
 import { AccordionAnimated } from "../../components/Accordion/AccordionAnimated";
 import { Modal } from "../../components/Modal/Modal";
+import CodeSpinner from "../../components/Spinner/Spinner";
 
 import slideItems from "../../mocks/CarrossselData/CarrosselItens";
 
@@ -44,7 +45,7 @@ const Tools = () => {
         <Button />
       </Card>
       <Card>
-        <Button onClick={() => setIsOpen(!isOpen)} titulo="Open Modal"/>
+        <Button onClick={() => setIsOpen(!isOpen)} titulo="Open Modal" />
         <Modal
           isOpen={isOpen}
           showing={isOpen}
@@ -52,6 +53,14 @@ const Tools = () => {
         >
           teste com modal
         </Modal>
+      </Card>
+      <Card>
+        <CodeSpinner size={5} />
+        <CodeSpinner size={10} />
+        <CodeSpinner size={20} />
+        <CodeSpinner size={30} />
+        <CodeSpinner size={60} />
+        <CodeSpinner size={100} />
       </Card>
       <Card>
         <Carrossel items={slideItems} />
