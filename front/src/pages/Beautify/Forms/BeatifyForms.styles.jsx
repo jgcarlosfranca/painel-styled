@@ -101,4 +101,8 @@ export const StyledBeautifyConteiner = styled.div`
     flex: 0 0 80px;
     background-color: ${(props) => props.theme.colors.primaryButtonColor};
   }
+
+  .wrapper-spiner{
+    height: 4rem;
+  }
 `;

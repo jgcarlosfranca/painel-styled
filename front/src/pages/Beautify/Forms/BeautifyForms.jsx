@@ -1,7 +1,6 @@
 import React from "react";
-import {
-  StyledBeautifyConteiner,
-} from "./BeatifyForms.styles";
+import { StyledBeautifyConteiner } from "./BeatifyForms.styles";
+import CodeSpinner from "../../../components/Spinner/Spinner";
 
 const BeautifyForms = () => {
   return (
@@ -40,6 +39,7 @@ const BeautifyForms = () => {
           <span></span>
         </button>
       </div>
+      <div className="wrapper-spiner"></div>
     </StyledBeautifyConteiner>
   );
 };
