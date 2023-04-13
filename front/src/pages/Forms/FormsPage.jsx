@@ -25,7 +25,7 @@ const FormsPage = () => {
         />
       </BackGroundFixedCard>
       <Card>
-        <MultiSelect options={options} />
+        <MultiSelect options={options} tamanhoInput={"15rem"} />
       </Card>
     </StyledFormsPageConteiner>
   );
