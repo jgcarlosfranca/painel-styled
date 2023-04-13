@@ -6,7 +6,7 @@ import {
   MultiSelectItem,
 } from "./MultiSelect.styles";
 
-const MultiSelect = ({ options }) => {
+const MultiSelect = ({ options, tamanhoInput }) => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +25,7 @@ const MultiSelect = ({ options }) => {
   };
 
   return (
-    <MultiSelectWrapper>
+    <MultiSelectWrapper tamanhoInput={tamanhoInput}>
       <MultiSelectButton onClick={handleToggle}>
         {selectedOptions.length === 0
           ? "Select options"
