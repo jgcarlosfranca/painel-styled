@@ -7,8 +7,10 @@ export const MultiSelectWrapper = styled.div`
 `;
 
 export const MultiSelectButton = styled.button`
-  background-color: #fff;
-  border: 1px solid #ccc;
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.sidebarBackgroud};
+  border: ${(props) => props.theme.colors.borderHeader};
+  color: ${(props) => props.theme.colors.text};
   border-radius: 3px;
   padding: 8px;
   min-width: 120px;
@@ -17,12 +19,13 @@ export const MultiSelectButton = styled.button`
 `;
 
 export const MultiSelectList = styled.ul`
+  width: 100%;
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: ${(props) => props.theme.colors.sidebarBackgroud};
+  border: ${(props) => props.theme.colors.borderHeader};
   border-radius: 3px;
   padding: 8px;
   list-style: none;
@@ -31,16 +34,16 @@ export const MultiSelectList = styled.ul`
 `;
 
 export const MultiSelectItem = styled.li`
+  width: 100%;
   padding: 4px 8px;
   cursor: pointer;
+  color: ${(props) => props.theme.colors.text};
 
   &:hover {
-    background-color: #f1f1f1;
+    background-color: ${(props) => props.theme.colors.sideBarThumb};
   }
 
   ${({ isSelected }) =>
     isSelected &&
-    `
-      background-color: #f1f1f1;
-    `}
+    `background-color: ${(props) => props.theme.colors.sideBarThumb};`}
 `;
