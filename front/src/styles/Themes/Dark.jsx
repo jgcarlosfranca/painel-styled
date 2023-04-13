@@ -13,6 +13,7 @@ const darkTheme = {
     hoverLockButton: "#7e7e7ed3",
     text: "#fff",
     textLight: "#f5f5f5",
+    textDark: "#000000",
     toggleThemeBackGrond: "#ffb300",
     sidebarBackgroud: "#283046",
     contrastBackgroud: "#343D55",
