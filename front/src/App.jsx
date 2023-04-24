@@ -22,6 +22,7 @@ import FormsPage from "./pages/Forms/FormsPage";
 import ReduxPage from "./pages/ReduxPages/ReduxPage";
 import LabFontPage from "./pages/LabFont/LabFontPage";
 
+import SidebarSubMenu from "./components/SiderBarSubMenu/SidebarSubMenu";
 import BeautifyForms from "./pages/Beautify/Forms/BeautifyForms";
 
 function App() {
@@ -36,7 +37,8 @@ function App() {
       <div className="App">
         <Router>
           <GlobalStyles />
-          <SideBar />
+          {/* <SideBar /> */}
+          <SidebarSubMenu />
           <BodyConteiner>
             <Header toggleTheme={toggleTheme} />
             <GlassEffectConteiner />
