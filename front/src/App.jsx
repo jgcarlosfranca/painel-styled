@@ -21,6 +21,7 @@ import ModalPage from "./pages/Modal/ModalPage";
 import FormsPage from "./pages/Forms/FormsPage";
 import ReduxPage from "./pages/ReduxPages/ReduxPage";
 import LabFontPage from "./pages/LabFont/LabFontPage";
+import TablePages from "./pages/TablesPages/TablePages";
 
 import SidebarSubMenu from "./components/SiderBarSubMenu/SidebarSubMenu";
 import BeautifyForms from "./pages/Beautify/Forms/BeautifyForms";
@@ -53,6 +54,7 @@ function App() {
               <Route element={<ReduxPage />} exact path={paths.ReduxSimple} />
               <Route element={<LabFontPage />} exact path={paths.LabFont} />
               <Route element={<BeautifyForms />} exact path={paths.Beautify} />
+              <Route element={<TablePages />} exact path={paths.Beautify} />
             </Routes>
           </BodyConteiner>
         </Router>
