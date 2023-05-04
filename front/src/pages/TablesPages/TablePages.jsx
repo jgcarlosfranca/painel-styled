@@ -1,12 +1,18 @@
 import React from "react";
 import { Card } from "../../components/Card";
-import { TablePagination } from "../../components/TablePagination";
+import TableCustom from "../../components/TablePagination/TablePagination";
+import Table from "../../components/Table/Table";
 
 const TablePages = () => {
   return (
-    <Card>
-      <TablePagination />
-    </Card>
+    <>
+      <Card>
+        <TableCustom />;
+      </Card>
+      {/* <Card>
+        <Table />;
+      </Card> */}
+    </>
   );
 };
 
