@@ -61,6 +61,11 @@ const routes = [
     name: "Lab Fonts",
     icon: <ImLab />,
   },
+  {
+    path: paths.Table,
+    name: "Tables",
+    icon: <ImLab />,
+  },
 ];
 
 export default routes;
