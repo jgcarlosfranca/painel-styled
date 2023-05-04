@@ -38,8 +38,8 @@ function App() {
       <div className="App">
         <Router>
           <GlobalStyles />
-          {/* <SideBar /> */}
-          <SidebarSubMenu />
+          <SideBar />
+          {/* <SidebarSubMenu /> */}
           <BodyConteiner>
             <Header toggleTheme={toggleTheme} />
             <GlassEffectConteiner />
@@ -54,7 +54,7 @@ function App() {
               <Route element={<ReduxPage />} exact path={paths.ReduxSimple} />
               <Route element={<LabFontPage />} exact path={paths.LabFont} />
               <Route element={<BeautifyForms />} exact path={paths.Beautify} />
-              <Route element={<TablePages />} exact path={paths.Beautify} />
+              <Route element={<TablePages />} exact path={paths.Table} />
             </Routes>
           </BodyConteiner>
         </Router>
