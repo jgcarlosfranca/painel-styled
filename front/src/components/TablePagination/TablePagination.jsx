@@ -22,7 +22,7 @@ const data = [
   { id: 10, name: "Item 10", value: 1000 },
 ];
 
-const Table = () => {
+const TableCustom = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
 
@@ -70,3 +70,5 @@ const Table = () => {
     </TableWrapper>
   );
 };
+
+export default TableCustom;
