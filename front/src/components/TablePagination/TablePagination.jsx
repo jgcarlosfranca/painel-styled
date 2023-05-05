@@ -20,6 +20,16 @@ const data = [
   { id: 8, name: "Item 8", value: 800 },
   { id: 9, name: "Item 9", value: 900 },
   { id: 10, name: "Item 10", value: 1000 },
+  { id: 11, name: "Item 1", value: 100 },
+  { id: 12, name: "Item 2", value: 200 },
+  { id: 13, name: "Item 3", value: 300 },
+  { id: 14, name: "Item 4", value: 400 },
+  { id: 15, name: "Item 5", value: 500 },
+  { id: 16, name: "Item 6", value: 600 },
+  { id: 17, name: "Item 7", value: 700 },
+  { id: 18, name: "Item 8", value: 800 },
+  { id: 19, name: "Item 9", value: 900 },
+  { id: 20, name: "Item 10", value: 1000 },
 ];
 
 const TableCustom = () => {
@@ -30,7 +40,7 @@ const TableCustom = () => {
     item.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  const itemsPerPage = 3;
+  const itemsPerPage = 5;
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
